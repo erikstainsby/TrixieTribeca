@@ -48,7 +48,7 @@
 
 - (IBAction) showEditorPopover:(id)sender {
 	id locator = [sender representedObject];
-	NSLog(@"%s- [%04d] %@", __PRETTY_FUNCTION__, __LINE__, [locator tag]);
+	NSLog(@"%s- [%04d] %lu", __PRETTY_FUNCTION__, __LINE__, [locator tag]);
 }
 
 - (IBAction) removeLocator:(id)sender {
