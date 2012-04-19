@@ -21,7 +21,7 @@
 {
     self = [super initWithNibName:@"RSLocatorView" bundle:nil];
     if (self) {
-
+	
     }
     return self;
 }

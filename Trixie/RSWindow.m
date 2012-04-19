@@ -46,11 +46,6 @@
 	[self setMouseIsOverWebView:YES];
 }
 
-- (IBAction) showEditorPopover:(id)sender {
-	id locator = [sender representedObject];
-	NSLog(@"%s- [%04d] %lu", __PRETTY_FUNCTION__, __LINE__, [locator tag]);
-}
-
 - (IBAction) removeLocator:(id)sender {
 	
 	[self setMouseIsOverWebView:YES];
@@ -73,5 +68,18 @@
 		[super sendEvent: theEvent];
 	}
 }
+
+- (IBAction) showEditorPopover:(id)sender {
+	id locator = [sender representedObject];
+	/** TODO make this real **/
+	NSLog(@"%s- [%04d] %lu", __PRETTY_FUNCTION__, __LINE__, [locator tag]);
+	[[NSNotificationCenter defaultCenter] postNotificationName:RSPopoverRequestedNotification object:sender];
+}
+
+#pragma mark - NSPopoverDelegate method 
+- (void) performClose:(id)sender {
+	
+}
+
 
 @end

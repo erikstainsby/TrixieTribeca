@@ -18,6 +18,7 @@ NSString * const RSWebViewLeftMouseUpEventNotification = @"RSWebViewLeftMouseUpE
 NSString * const RSTRIXIE_APP_SUPPORT_DIR = @"Roaring Sky";
 NSString * const RSTRIXIE_WORKING_DIR = @"Trixie";
 
+NSString * const RSPopoverRequestedNotification = @"RSPopoverRequestedNotification";
 
 NSString * const RSMouseEnteredLocatorNotification = @"RSMouseEnteredLocatorNotification";
 NSString * const RSMouseExitedLocatorNotification = @"RSMouseExitedLocatorNotification";

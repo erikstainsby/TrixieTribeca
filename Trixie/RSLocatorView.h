@@ -10,9 +10,11 @@
 
 @interface RSLocatorView : NSView
 
+@property (retain) IBOutlet NSButton * locatorButton;
 @property (assign) NSInteger tag;
 @property (assign) NSTrackingRectTag trackingRectTag;
 
 - (BOOL) acceptsFirstResponder;
+- (IBAction) requestPopover:(id)sender;
 
 @end

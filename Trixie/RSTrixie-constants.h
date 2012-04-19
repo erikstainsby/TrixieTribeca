@@ -19,6 +19,7 @@ extern NSString * const RSWebViewLeftMouseUpEventNotification;
 extern NSString * const RSTRIXIE_APP_SUPPORT_DIR;
 extern NSString * const RSTRIXIE_WORKING_DIR;
 
+extern NSString * const RSPopoverRequestedNotification;
 
 extern NSString * const RSMouseEnteredLocatorNotification;
 extern NSString * const RSMouseExitedLocatorNotification;

@@ -10,7 +10,7 @@
 #import <WebKit/WebKit.h>
 #import "RSWebView.h"
 
-@interface RSWindow : NSWindow
+@interface RSWindow : NSWindow < NSPopoverDelegate >
 
 @property (assign) BOOL mouseIsOverWebView;
 @property (retain) IBOutlet RSWebView * webview;
@@ -25,5 +25,9 @@
 - (void) mouseExited:(NSEvent *)theEvent;
 
 - (void) sendEvent:(NSEvent *)theEvent;
+
+#pragma mark - NSPopoverDelegate methods 
+
+- (void) performClose:(id)sender;
 
 @end
