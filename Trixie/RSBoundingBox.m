@@ -24,15 +24,18 @@
 	NSRect r = [self bounds];
 	
 	NSBezierPath * path = [NSBezierPath bezierPathWithRect:NSInsetRect(r, 0, 0)];
-	[[NSColor blueColor] set];
-	[path stroke];
+
 	CGContextRef ctx = [[NSGraphicsContext currentContext] graphicsPort];
 	CGContextSaveGState(ctx);
 	
-	CGContextSetRGBFillColor(ctx, 0.1, 0.1, 0.9, 0.1);
+	CGContextSetRGBStrokeColor(ctx, 0.1, 0.1, 1, 0.3);
+	[path stroke];
+	
+	CGContextSetRGBFillColor(ctx, 0.1, 0.1, 0.9, 0.04);
 	CGContextFillRect(ctx, r);
 	
 	CGContextRestoreGState(ctx);
 }
+
 
 @end

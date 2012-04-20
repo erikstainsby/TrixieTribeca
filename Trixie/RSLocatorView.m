@@ -59,7 +59,6 @@
 	[self removeTrackingRect:trackingRectTag];
 }
 
-
 - (void)drawRect:(NSRect)dirtyRect
 {
     // Drawing code here.

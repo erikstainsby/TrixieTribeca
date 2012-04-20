@@ -39,12 +39,15 @@ static int idnum = 0;
 	DOMElement * node = [dict objectForKey:WebElementDOMNodeKey];
 	
 	RSBoundingBox * temp = [[RSBoundingBox alloc] initWithFrame:[node boundingBox]];
+	
 	NSPoint converted = NSMakePoint(temp.frame.origin.x, [self superview].frame.size.height - temp.frame.origin.y - temp.frame.size.height);
 	[temp setFrameOrigin:converted];
 	 
 	RSLocatorViewController * ctlr = [[RSLocatorViewController alloc] init];
 	RSLocatorView * tempLocator = (RSLocatorView*)[ctlr view];
-	NSRect tempFrame = NSMakeRect(temp.frame.origin.x-20, converted.y, 20, temp.frame.size.height);
+	
+	// 20 x 20 at top-left of bounding box
+	NSRect tempFrame = NSMakeRect(temp.frame.origin.x-20, converted.y + temp.frame.size.height - 20, 20, 20);
 	[tempLocator setFrame: tempFrame];
 
 	if( DOM_ELEMENT_NODE == [node nodeType]) 
