@@ -10,28 +10,61 @@
 
 @implementation RSWebView
 
+@synthesize trixie;
 @synthesize boundingBox;
 @synthesize locators; 
-@synthesize locatorController;
 @synthesize trackingRectTag;
 
-static int idnum = 0;
+@synthesize taggedNodes;
 
-- ( void) awakeFromNib {
+- (void) awakeFromNib {
 	
-	locators = [NSMutableArray array];
+	trixie = [[NSApp delegate] windowController];
+	locators = [NSMutableDictionary dictionary];
+	taggedNodes = [NSMutableDictionary dictionary];
 		
 	boundingBox = nil;
-	trackingRectTag = [self addTrackingRect:[self bounds] owner:self userData:nil assumeInside:NO];
+	NSRect inset = NSInsetRect([self bounds], 3, 3);
+	trackingRectTag = [self addTrackingRect:inset owner:self userData:nil assumeInside:NO];
 	
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(tagElement:) name:RSWebViewLeftMouseUpEventNotification object:nil];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(removeLocatorFromDict:) name:RSRemoveLocatorNotification object:nil];
 }
 
 - (BOOL) acceptsFirstResponder {
 	return YES;
 }
 
-- (void) tagElement:(NSNotification*)notification {
+- (DOMNode*) nodeForTag:(NSString*)tag {
+	NSLog(@"%s- [%04d] %@", __PRETTY_FUNCTION__, __LINE__, @"");
+	return [taggedNodes objectForKey:tag];
+}
+
+- (RSBoundingBox*) boundingBoxForNodeTag:(NSString*)tag {
+	DOMNode * node = [self nodeForTag:tag];
+	return [[RSBoundingBox alloc] initWithFrame:[node boundingBox]];
+}
+
+- (NSRect) frameRelativeTo:(RSBoundingBox*)bbox {
+	return NSMakeRect(bbox.frame.origin.x-20, bbox.frame.origin.y + bbox.frame.size.height - 20, 20, 20);
+}
+
+- (NSRect) frameRelativeForTag:(NSString *) tag {
+	RSBoundingBox * bbox = [self boundingBoxForNodeTag: tag];
+	return [self frameRelativeTo: bbox];
+}
+
+- (void) repositionLocatorViews {
+	for(NSString * idtag in [taggedNodes allKeys]) 
+	{
+		DOMElement * node = [taggedNodes objectForKey:idtag];
+		RSBoundingBox * bbox = [[RSBoundingBox alloc] initWithFrame:[node boundingBox]];
+		RSLocatorViewController * lv = [locators objectForKey:idtag];
+		[[lv view]setFrame:[self frameRelativeTo:bbox]];
+	}
+}
+
+- (void) tagElement:(NSNotification*) notification {
 	
 	NSEvent * event = [notification object];
 	NSPoint pt = [event locationInWindow];
@@ -47,34 +80,38 @@ static int idnum = 0;
 	RSLocatorView * tempLocator = (RSLocatorView*)[ctlr view];
 	
 	// 20 x 20 at top-left of bounding box
-	NSRect tempFrame = NSMakeRect(temp.frame.origin.x-20, converted.y + temp.frame.size.height - 20, 20, 20);
+	NSRect tempFrame = [self frameRelativeTo:temp];
+	NSLog(@"%s- [%04d] tempFrame: %@", __PRETTY_FUNCTION__, __LINE__, NSStringFromRect(tempFrame));
 	[tempLocator setFrame: tempFrame];
 
 	if( DOM_ELEMENT_NODE == [node nodeType]) 
 	{
-		if( [[node tagName] isEqualToString:@"IMG"]) 
+		if( [[node tagName] isEqualToString:@"IMG"])  
 		{
-			NSString * idNumber =  [(DOMElement*)node getAttribute:@"data-trixie-img-id"];
+			NSString * idNumber =  [(DOMElement*)node getAttribute:kRSTrixieIdKeyName];
+			
 			if( [idNumber length] > 0 && [idNumber integerValue]>-1) {
-					//	NSLog(@"%s- [%04d] found %@", __PRETTY_FUNCTION__, __LINE__, [(DOMElement*)node getAttribute:@"data-trixie-img-id"]);
+				//NSLog(@"%s- [%04d] found %@", __PRETTY_FUNCTION__, __LINE__, [(DOMElement*)node getAttribute:@"data-trixie-id"]);
 			}
 			else {
-				[(DOMElement*)node setAttribute:@"data-trixie-img-id" value:[NSString stringWithFormat:@"%i",idnum++]];
+				[(DOMElement*)node setAttribute:kRSTrixieIdKeyName value:[NSString stringWithFormat:@"%d",idnum++]];
 			}
-				//	NSLog(@"%s- [%04d] %@: data-trixie-img-id: %@", __PRETTY_FUNCTION__, __LINE__, [node tagName],[(DOMElement*)node getAttribute:@"data-trixie-img-id"]);
-			[tempLocator setTag: [[(DOMElement*)node getAttribute:@"data-trixie-img-id"] integerValue]];
+			//	NSLog(@"%s- [%04d] %@: data-trixie-img-id: %@", __PRETTY_FUNCTION__, __LINE__, [node tagName],[(DOMElement*)node getAttribute:@"data-trixie-id"]);
+			[tempLocator setTag: [[(DOMElement*)node getAttribute:kRSTrixieIdKeyName] integerValue]];
 		}
 		else {
-				//	NSLog(@"%s- [%04d] %@: data-trixie-id: %@", __PRETTY_FUNCTION__, __LINE__, [node tagName],[(DOMElement*)node getAttribute:@"data-trixie-id"]);
-			[tempLocator setTag: [[(DOMElement*)node getAttribute:@"data-trixie-id"] integerValue]];
+			//	NSLog(@"%s- [%04d] %@: data-trixie-id: %@", __PRETTY_FUNCTION__, __LINE__, [node tagName],[(DOMElement*)node getAttribute:@"data-trixie-id"]);
+			[tempLocator setTag: [[(DOMElement*)node getAttribute:kRSTrixieIdKeyName] integerValue]];
 		}
+		NSLog(@"%s- [%04d] %lu", __PRETTY_FUNCTION__, __LINE__, [tempLocator tag]);
 	}
 	else {
 		DOMElement * parent = (DOMElement*)[node parentNode];
-		[tempLocator setTag: [[parent getAttribute:@"data-trixie-id"] integerValue]];
-			//	NSLog(@"%s- [%04d] %@: data-trixie-id: %@", __PRETTY_FUNCTION__, __LINE__, [parent tagName],[parent getAttribute:@"data-trixie-id"]);
+		[tempLocator setTag: [[parent getAttribute:kRSTrixieIdKeyName] integerValue]];
+		NSLog(@"%s- [%04d] %@: data-trixie-id: %@", __PRETTY_FUNCTION__, __LINE__, [parent tagName],[parent getAttribute:@"data-trixie-id"]);
 	}
-		
+	
+	
 	if(nil != boundingBox)
 	{
 		[[self superview] replaceSubview:boundingBox with: temp];
@@ -82,18 +119,47 @@ static int idnum = 0;
 	else {
 		[[self superview] addSubview:temp];
 	}
-	[[self superview] addSubview:tempLocator];
+
 	
-	if( ! [[self superview] viewWithTag: tempLocator.tag]) 
-	{
-		[[self superview] addSubview:tempLocator];
-		[tempLocator setNeedsDisplay:YES];
-		[locators addObject:ctlr];
+	id obj = [taggedNodes objectForKey:[NSString stringWithFormat:@"%d",tempLocator.tag]];
+	if( obj != nil ){
+		//
+		// the object is already in our cache
+		//
+		NSLog(@"%s- [%04d] %@", __PRETTY_FUNCTION__, __LINE__, @" already cached node - ");
+		
 	}
-	tempLocator = nil;
+	else {
+	
+		//	NSLog(@"%s- [%04d] templocator.tag: %lu", __PRETTY_FUNCTION__, __LINE__, tempLocator.tag);
+		
+
+		if( ! [[self superview] viewWithTag: tempLocator.tag]) 
+		{
+			[[self superview] addSubview:tempLocator];
+			[tempLocator setNeedsDisplay:YES];
+			[locators setObject: ctlr forKey:[NSString stringWithFormat:@"%d",tempLocator.tag]];
+			if( DOM_TEXT_NODE == [(DOMElement*)node nodeType]) {
+				[taggedNodes setObject:[(DOMElement*)node parentNode] forKey:[NSString stringWithFormat:@"%d",tempLocator.tag]];
+			}
+			else {
+				[taggedNodes setObject: node forKey:[NSString stringWithFormat:@"%d",tempLocator.tag]];
+			}
+		}
+		tempLocator = nil;
+	}
 	
 	boundingBox = temp;
+	[boundingBox setDisplayCoordinates:YES];
 	[boundingBox setNeedsDisplay:YES];
+}
+
+- (IBAction) removeLocatorFromDict:(id)sender { 
+	RSLocatorView * view = sender;
+	[self removeBoundingBox];
+	[locators removeObjectForKey: [NSString stringWithFormat:@"%d",view.tag]];
+	[taggedNodes removeObjectForKey: [NSString stringWithFormat:@"%d",view.tag]];
+	NSLog(@"%s- [%04d] object removed for tag", __PRETTY_FUNCTION__, __LINE__ );
 }
 
 - (void) removeBoundingBox {
@@ -104,13 +170,10 @@ static int idnum = 0;
 	}
 }
 
-- (IBAction) removeBoundingBox:(id)sender {
-	[self removeBoundingBox];
-}
-
-- ( void) updateTrackingAreas {
+- (void) updateTrackingAreas {
 	[self removeTrackingRect:trackingRectTag];
 	trackingRectTag = [self addTrackingRect:[self bounds] owner:self userData:nil assumeInside:NO];
 }
+
 
 @end

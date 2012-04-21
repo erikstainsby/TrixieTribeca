@@ -8,10 +8,10 @@
 
 #import <Cocoa/Cocoa.h>
 #import "RSLocatorView.h"
+@class RSWebView;
 
 @interface RSLocatorViewController : NSViewController
 
 @property (retain) IBOutlet NSButton * button;
-
 
 @end

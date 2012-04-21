@@ -47,13 +47,11 @@
 }
 
 - (IBAction) removeLocator:(id)sender {
-	
 	[self setMouseIsOverWebView:YES];
 	id locator = [sender representedObject];
+	[webview removeLocatorFromDict:locator];
 	[locator removeFromSuperview];
-	[webview removeBoundingBox];
 }
-
 
 - (void) sendEvent:(NSEvent *)theEvent {
 	if([theEvent type] == NSLeftMouseDown && mouseIsOverWebView) {

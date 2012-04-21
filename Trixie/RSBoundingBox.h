@@ -10,4 +10,7 @@
 
 @interface RSBoundingBox : NSView
 
+@property (assign) BOOL displayCoordinates;
+@property (retain) IBOutlet NSDictionary * attr;
+
 @end

@@ -7,6 +7,8 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "RSBoundingBox.h"
+#import "RSWebView.h"
 
 @interface RSLocatorView : NSView
 
@@ -16,5 +18,6 @@
 
 - (BOOL) acceptsFirstResponder;
 - (IBAction) requestPopover:(id)sender;
+	//- (IBAction) removeLocatorButton:(id)sender;
 
 @end

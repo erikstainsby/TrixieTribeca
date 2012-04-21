@@ -19,9 +19,11 @@ NSString * const RSTRIXIE_APP_SUPPORT_DIR = @"Roaring Sky";
 NSString * const RSTRIXIE_WORKING_DIR = @"Trixie";
 
 NSString * const RSPopoverRequestedNotification = @"RSPopoverRequestedNotification";
-
 NSString * const RSMouseEnteredLocatorNotification = @"RSMouseEnteredLocatorNotification";
 NSString * const RSMouseExitedLocatorNotification = @"RSMouseExitedLocatorNotification";
+NSString * const RSRemoveLocatorNotification = @"RSRemoveLocatorNotification";
+
+NSString * const kRSTrixieIdKeyName = @"data-trixie-id";
 
 int const RSLocatorStyleNone = 0;
 int const RSLocatorStyleActionPending = 1;
@@ -30,3 +32,5 @@ int const RSLocatorStyleFilterPending = 4;
 int const RSLocatorStyleActionComplete = 8;
 int const RSLocatorStyleReactionComplete = 16;
 int const RSLocatorStyleFilterComplete = 32;
+
+static NSInteger idnum = 0;

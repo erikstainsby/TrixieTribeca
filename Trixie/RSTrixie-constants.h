@@ -20,9 +20,11 @@ extern NSString * const RSTRIXIE_APP_SUPPORT_DIR;
 extern NSString * const RSTRIXIE_WORKING_DIR;
 
 extern NSString * const RSPopoverRequestedNotification;
-
 extern NSString * const RSMouseEnteredLocatorNotification;
 extern NSString * const RSMouseExitedLocatorNotification;
+extern NSString * const RSRemoveLocatorNotification;
+
+extern NSString * const kRSTrixieIdKeyName;
 
 extern int const RSLocatorStyleNone;
 extern int const RSLocatorStyleActionPending;
@@ -32,5 +34,6 @@ extern int const RSLocatorStyleActionComplete;
 extern int const RSLocatorStyleReactionComplete;
 extern int const RSLocatorStyleFilterComplete;
 
+static NSInteger  idnum;
 
 #endif

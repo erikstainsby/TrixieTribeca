@@ -10,17 +10,26 @@
 #import "RSBoundingBox.h"
 #import "RSLocatorViewController.h"
 
+@class RSTrixieController;
 
 @interface RSWebView : WebView
+{
+	id _delegate;
+}
 
-@property (retain) IBOutlet NSMutableArray * locators;
-@property (retain) IBOutlet RSLocatorViewController * locatorController;
+@property (retain) IBOutlet RSTrixieController * trixie;
+@property (retain) IBOutlet NSMutableDictionary * locators;
 @property (retain) RSBoundingBox * boundingBox;
 @property (assign) NSTrackingRectTag trackingRectTag;
+@property (retain) IBOutlet NSMutableDictionary * taggedNodes;
 
 - (BOOL) acceptsFirstResponder;
 - (void) removeBoundingBox;
-- (IBAction) removeBoundingBox:(id)sender;
+- (RSBoundingBox*) boundingBoxForNodeTag:(NSString*)tag;
+- (NSRect) frameRelativeTo:(RSBoundingBox*) bbox;
+- (NSRect) frameRelativeForTag:(NSString *) tag;
+- (IBAction) removeLocatorFromDict:(id)sender;
+- (void) repositionLocatorViews;
 - (void) tagElement:(NSNotification*)notification;
 - (void) updateTrackingAreas;
 

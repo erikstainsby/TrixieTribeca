@@ -394,7 +394,6 @@
 				<string key="NSFrameSize">{163, 96}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
-				<reference key="NSNextKeyView"/>
 				<string key="NSReuseIdentifierKey">_NS:9</string>
 				<string key="NSClassName">NSView</string>
 			</object>
@@ -688,25 +687,6 @@
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
 				<object class="IBPartialClassDescription">
-					<string key="className">RSLocatorViewController</string>
-					<string key="superclassName">NSViewController</string>
-					<object class="NSMutableDictionary" key="outlets">
-						<string key="NS.key.0">button</string>
-						<string key="NS.object.0">NSButton</string>
-					</object>
-					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<string key="NS.key.0">button</string>
-						<object class="IBToOneOutletInfo" key="NS.object.0">
-							<string key="name">button</string>
-							<string key="candidateClassName">NSButton</string>
-						</object>
-					</object>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/RSLocatorViewController.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
 					<string key="className">RSPopoverViewController</string>
 					<string key="superclassName">NSViewController</string>
 					<object class="NSMutableDictionary" key="outlets">
@@ -741,7 +721,7 @@
 					</object>
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="urlLocationBox">NSComboBox</string>
-						<string key="webview">WebView</string>
+						<string key="webview">RSWebView</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
 						<object class="IBToOneOutletInfo" key="urlLocationBox">
@@ -750,7 +730,7 @@
 						</object>
 						<object class="IBToOneOutletInfo" key="webview">
 							<string key="name">webview</string>
-							<string key="candidateClassName">WebView</string>
+							<string key="candidateClassName">RSWebView</string>
 						</object>
 					</dictionary>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
@@ -762,28 +742,33 @@
 					<string key="className">RSWebView</string>
 					<string key="superclassName">WebView</string>
 					<object class="NSMutableDictionary" key="actions">
-						<string key="NS.key.0">removeBoundingBox:</string>
+						<string key="NS.key.0">removeLocatorFromDict:</string>
 						<string key="NS.object.0">id</string>
 					</object>
 					<object class="NSMutableDictionary" key="actionInfosByName">
-						<string key="NS.key.0">removeBoundingBox:</string>
+						<string key="NS.key.0">removeLocatorFromDict:</string>
 						<object class="IBActionInfo" key="NS.object.0">
-							<string key="name">removeBoundingBox:</string>
+							<string key="name">removeLocatorFromDict:</string>
 							<string key="candidateClassName">id</string>
 						</object>
 					</object>
 					<dictionary class="NSMutableDictionary" key="outlets">
-						<string key="locatorController">RSLocatorViewController</string>
-						<string key="locators">NSMutableArray</string>
+						<string key="locators">NSMutableDictionary</string>
+						<string key="taggedNodes">NSMutableDictionary</string>
+						<string key="trixie">RSTrixieController</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<object class="IBToOneOutletInfo" key="locatorController">
-							<string key="name">locatorController</string>
-							<string key="candidateClassName">RSLocatorViewController</string>
-						</object>
 						<object class="IBToOneOutletInfo" key="locators">
 							<string key="name">locators</string>
-							<string key="candidateClassName">NSMutableArray</string>
+							<string key="candidateClassName">NSMutableDictionary</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="taggedNodes">
+							<string key="name">taggedNodes</string>
+							<string key="candidateClassName">NSMutableDictionary</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="trixie">
+							<string key="name">trixie</string>
+							<string key="candidateClassName">RSTrixieController</string>
 						</object>
 					</dictionary>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">

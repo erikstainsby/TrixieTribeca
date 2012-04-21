@@ -21,7 +21,7 @@
 {
     self = [super initWithNibName:@"RSLocatorView" bundle:nil];
     if (self) {
-	
+		NSLog(@"%s- [%04d] %@", __PRETTY_FUNCTION__, __LINE__, @"");
     }
     return self;
 }

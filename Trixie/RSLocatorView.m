@@ -10,6 +10,8 @@
 
 @implementation RSLocatorView
 
+@class RSWebView;
+
 @synthesize locatorButton;
 @synthesize tag = _tag;
 @synthesize trackingRectTag;
@@ -18,21 +20,24 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
+		NSLog(@"%s- [%04d] %@", __PRETTY_FUNCTION__, __LINE__, @"");
         trackingRectTag = [self addTrackingRect:[self bounds] owner:self userData:nil assumeInside:NO];
 		
 		[[self locatorButton] setTarget:self];
 		[[self locatorButton] setAction:@selector(requestPopover:)];
-		
     }
     return self;
 }
+
 
 - (IBAction) requestPopover:(id)sender {
 	NSLog(@"%s- [%04d] %@", __PRETTY_FUNCTION__, __LINE__, [sender className]);
 	[[NSNotificationCenter defaultCenter] postNotificationName:RSPopoverRequestedNotification object:locatorButton];
 }
 
+
 - (void) awakeFromNib {
+	NSLog(@"%s- [%04d] %@", __PRETTY_FUNCTION__, __LINE__, @"");
 	[[self.menu itemWithTitle:@"Edit"] setRepresentedObject:self];
 	[[self.menu itemWithTitle:@"Delete"] setRepresentedObject:self];
 }
@@ -48,7 +53,7 @@
 	[[NSNotificationCenter defaultCenter] postNotificationName:RSMouseExitedLocatorNotification object:self];
 }
 
-- ( void) updateTrackingAreas {
+- (void) updateTrackingAreas {
 	[self removeTrackingRect:trackingRectTag];
 	trackingRectTag = [self addTrackingRect:[self bounds] owner:self userData:nil assumeInside:NO];
 }
