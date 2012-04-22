@@ -8,6 +8,40 @@
 
 /* Begin PBXBuildFile section */
 		037C3DDB15447DD800FEC73C /* zepto.min.js in Sources */ = {isa = PBXBuildFile; fileRef = 037C3DDA15447DD800FEC73C /* zepto.min.js */; };
+		037C3E531544B6B100FEC73C /* ActionBlur.h in Headers */ = {isa = PBXBuildFile; fileRef = 037C3E521544B6B000FEC73C /* ActionBlur.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		037C3E551544B6C200FEC73C /* ActionChange.h in Headers */ = {isa = PBXBuildFile; fileRef = 037C3E541544B6C200FEC73C /* ActionChange.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		037C3E571544B6D000FEC73C /* ActionClick.h in Headers */ = {isa = PBXBuildFile; fileRef = 037C3E561544B6D000FEC73C /* ActionClick.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		037C3E591544B6F400FEC73C /* ActionDoubleClick.h in Headers */ = {isa = PBXBuildFile; fileRef = 037C3E581544B6F400FEC73C /* ActionDoubleClick.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		037C3E5B1544B70100FEC73C /* ActionDrop.h in Headers */ = {isa = PBXBuildFile; fileRef = 037C3E5A1544B70100FEC73C /* ActionDrop.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		037C3E5D1544B70F00FEC73C /* ActionFocus.h in Headers */ = {isa = PBXBuildFile; fileRef = 037C3E5C1544B70F00FEC73C /* ActionFocus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		037C3E5F1544B71D00FEC73C /* ActionKeyDown.h in Headers */ = {isa = PBXBuildFile; fileRef = 037C3E5E1544B71D00FEC73C /* ActionKeyDown.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		037C3E611544B72B00FEC73C /* ActionKeyPress.h in Headers */ = {isa = PBXBuildFile; fileRef = 037C3E601544B72B00FEC73C /* ActionKeyPress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		037C3E641544B75000FEC73C /* ActionKeyUp.h in Headers */ = {isa = PBXBuildFile; fileRef = 037C3E631544B75000FEC73C /* ActionKeyUp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		037C3E661544B75B00FEC73C /* ActionMouseDown.h in Headers */ = {isa = PBXBuildFile; fileRef = 037C3E651544B75B00FEC73C /* ActionMouseDown.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		037C3E681544B76600FEC73C /* ActionMouseOut.h in Headers */ = {isa = PBXBuildFile; fileRef = 037C3E671544B76600FEC73C /* ActionMouseOut.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		037C3E6A1544B77100FEC73C /* ActionMouseOver.h in Headers */ = {isa = PBXBuildFile; fileRef = 037C3E691544B77100FEC73C /* ActionMouseOver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		037C3E6C1544B77B00FEC73C /* ActionMouseUp.h in Headers */ = {isa = PBXBuildFile; fileRef = 037C3E6B1544B77B00FEC73C /* ActionMouseUp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		037C3E6E1544B78700FEC73C /* ActionPageLoad.h in Headers */ = {isa = PBXBuildFile; fileRef = 037C3E6D1544B78700FEC73C /* ActionPageLoad.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		037C3E701544B79400FEC73C /* ActionPageUnload.h in Headers */ = {isa = PBXBuildFile; fileRef = 037C3E6F1544B79400FEC73C /* ActionPageUnload.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		037C3E721544B79F00FEC73C /* ActionResize.h in Headers */ = {isa = PBXBuildFile; fileRef = 037C3E711544B79F00FEC73C /* ActionResize.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		037C3E741544B7A900FEC73C /* ActionScroll.h in Headers */ = {isa = PBXBuildFile; fileRef = 037C3E731544B7A900FEC73C /* ActionScroll.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		037C3E761544B7B500FEC73C /* ActionSelect.h in Headers */ = {isa = PBXBuildFile; fileRef = 037C3E751544B7B500FEC73C /* ActionSelect.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		037C3E781544B7BF00FEC73C /* ActionSubmit.h in Headers */ = {isa = PBXBuildFile; fileRef = 037C3E771544B7BF00FEC73C /* ActionSubmit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		037C3E7A1544B7CE00FEC73C /* ConditionHasClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 037C3E791544B7CE00FEC73C /* ConditionHasClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		037C3E7C1544B7D800FEC73C /* ConditionStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = 037C3E7B1544B7D800FEC73C /* ConditionStatus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		037C3E7E1544B7E400FEC73C /* ConditionValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 037C3E7D1544B7E400FEC73C /* ConditionValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		037C3E801544B7EF00FEC73C /* NotImplementedPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 037C3E7F1544B7EF00FEC73C /* NotImplementedPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		037C3E821544B7FE00FEC73C /* ReactionAnimate.h in Headers */ = {isa = PBXBuildFile; fileRef = 037C3E811544B7FE00FEC73C /* ReactionAnimate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		037C3E841544B80600FEC73C /* ReactionClassAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 037C3E831544B80600FEC73C /* ReactionClassAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		037C3E861544B81400FEC73C /* ReactionClassRemove.h in Headers */ = {isa = PBXBuildFile; fileRef = 037C3E851544B81400FEC73C /* ReactionClassRemove.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		037C3E881544B81B00FEC73C /* ReactionClassToggle.h in Headers */ = {isa = PBXBuildFile; fileRef = 037C3E871544B81B00FEC73C /* ReactionClassToggle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		037C3E8A1544B82500FEC73C /* ReactionFadeIn.h in Headers */ = {isa = PBXBuildFile; fileRef = 037C3E891544B82500FEC73C /* ReactionFadeIn.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		037C3E8C1544B83200FEC73C /* ReactionFadeOut.h in Headers */ = {isa = PBXBuildFile; fileRef = 037C3E8B1544B83200FEC73C /* ReactionFadeOut.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		037C3E8E1544B83D00FEC73C /* ReactionFadeTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 037C3E8D1544B83D00FEC73C /* ReactionFadeTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		037C3E901544B84600FEC73C /* ReactionFadeToggle.h in Headers */ = {isa = PBXBuildFile; fileRef = 037C3E8F1544B84600FEC73C /* ReactionFadeToggle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		037C3E921544B85600FEC73C /* ReactionHide.h in Headers */ = {isa = PBXBuildFile; fileRef = 037C3E911544B85600FEC73C /* ReactionHide.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		037C3E941544B86700FEC73C /* ReactionShow.h in Headers */ = {isa = PBXBuildFile; fileRef = 037C3E931544B86700FEC73C /* ReactionShow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		037C3E961544B87600FEC73C /* ReactionSlideDown.h in Headers */ = {isa = PBXBuildFile; fileRef = 037C3E951544B87600FEC73C /* ReactionSlideDown.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		03943DE015436B9000A4E411 /* WebView+RSConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 03943DDF15436B9000A4E411 /* WebView+RSConvert.m */; };
 		03975D7B15350B49000C9EA0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03975D7A15350B49000C9EA0 /* Cocoa.framework */; };
 		03975D8515350B49000C9EA0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03975D8315350B49000C9EA0 /* InfoPlist.strings */; };
@@ -30,11 +64,132 @@
 		03A39024153A77B700915FEA /* RSLocatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A39022153A77B700915FEA /* RSLocatorViewController.m */; };
 		03A39028153B49D300915FEA /* RSLocatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A39027153B49D300915FEA /* RSLocatorView.m */; };
 		03A8FE3B153FBD8C0021B21A /* RSPopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A8FE3A153FBD8C0021B21A /* RSPopoverViewController.m */; };
+		03CFE5661544B8A3005076D1 /* ReactionSlideToggle.h in Headers */ = {isa = PBXBuildFile; fileRef = 03CFE5651544B8A3005076D1 /* ReactionSlideToggle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		03CFE5691544B8AF005076D1 /* ReactionSlideUp.h in Headers */ = {isa = PBXBuildFile; fileRef = 03CFE5681544B8AF005076D1 /* ReactionSlideUp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		03CFE56B1544B8F3005076D1 /* ReactionToggle.h in Headers */ = {isa = PBXBuildFile; fileRef = 03CFE56A1544B8F3005076D1 /* ReactionToggle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		03CFE57C1544BA98005076D1 /* ActionBlur.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03CFE57B1544BA98005076D1 /* ActionBlur.bundle */; };
+		03CFE57E1544BA9F005076D1 /* ActionChange.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03CFE57D1544BA9F005076D1 /* ActionChange.bundle */; };
+		03CFE5811544BAF0005076D1 /* ActionClick.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03CFE5801544BAF0005076D1 /* ActionClick.bundle */; };
+		03CFE5831544BAFA005076D1 /* ActionDoubleClick.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03CFE5821544BAFA005076D1 /* ActionDoubleClick.bundle */; };
+		03CFE5851544BB08005076D1 /* ActionDrop.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03CFE5841544BB08005076D1 /* ActionDrop.bundle */; };
+		03CFE5871544BB16005076D1 /* ActionFocus.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03CFE5861544BB16005076D1 /* ActionFocus.bundle */; };
+		03CFE5891544BB22005076D1 /* ActionKeyDown.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03CFE5881544BB22005076D1 /* ActionKeyDown.bundle */; };
+		03CFE58B1544BB2C005076D1 /* ActionKeyPress.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03CFE58A1544BB2C005076D1 /* ActionKeyPress.bundle */; };
+		03CFE58D1544BB42005076D1 /* ActionKeyUp.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03CFE58C1544BB42005076D1 /* ActionKeyUp.bundle */; };
+		03CFE58F1544BB57005076D1 /* ActionMouseDown.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03CFE58E1544BB57005076D1 /* ActionMouseDown.bundle */; };
+		03CFE5911544BB61005076D1 /* ActionMouseOut.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03CFE5901544BB61005076D1 /* ActionMouseOut.bundle */; };
+		03CFE5931544BB71005076D1 /* ActionMouseOver.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03CFE5921544BB71005076D1 /* ActionMouseOver.bundle */; };
+		03CFE5951544BB7F005076D1 /* ActionMouseUp.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03CFE5941544BB7F005076D1 /* ActionMouseUp.bundle */; };
+		03CFE5971544BB8F005076D1 /* ActionPageLoad.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03CFE5961544BB8F005076D1 /* ActionPageLoad.bundle */; };
+		03CFE5991544BB9C005076D1 /* ActionPageUnload.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03CFE5981544BB9C005076D1 /* ActionPageUnload.bundle */; };
+		03CFE59B1544BBB2005076D1 /* ActionResize.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03CFE59A1544BBB2005076D1 /* ActionResize.bundle */; };
+		03CFE59D1544BBC4005076D1 /* ActionScroll.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03CFE59C1544BBC4005076D1 /* ActionScroll.bundle */; };
+		03CFE59F1544BBD2005076D1 /* ActionSelect.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03CFE59E1544BBD2005076D1 /* ActionSelect.bundle */; };
+		03CFE5A11544BBDD005076D1 /* ActionSubmit.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03CFE5A01544BBDD005076D1 /* ActionSubmit.bundle */; };
+		03CFE5A31544BBEF005076D1 /* ConditionHasClass.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03CFE5A21544BBEF005076D1 /* ConditionHasClass.bundle */; };
+		03CFE5A51544BBF7005076D1 /* ConditionStatus.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03CFE5A41544BBF7005076D1 /* ConditionStatus.bundle */; };
+		03CFE5A71544BC13005076D1 /* NotImplementedPlugin.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03CFE5A61544BC13005076D1 /* NotImplementedPlugin.bundle */; };
+		03CFE5A91544BC27005076D1 /* ReactionAnimate.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03CFE5A81544BC27005076D1 /* ReactionAnimate.bundle */; };
+		03CFE5AB1544BC34005076D1 /* ReactionClassAdd.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03CFE5AA1544BC34005076D1 /* ReactionClassAdd.bundle */; };
+		03CFE5AD1544BC43005076D1 /* ReactionClassRemove.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03CFE5AC1544BC43005076D1 /* ReactionClassRemove.bundle */; };
+		03CFE5AF1544BC4F005076D1 /* ReactionClassToggle.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03CFE5AE1544BC4F005076D1 /* ReactionClassToggle.bundle */; };
+		03CFE5B11544BC5A005076D1 /* ReactionFadeIn.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03CFE5B01544BC5A005076D1 /* ReactionFadeIn.bundle */; };
+		03CFE5B31544BC65005076D1 /* ReactionFadeOut.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03CFE5B21544BC65005076D1 /* ReactionFadeOut.bundle */; };
+		03CFE5B51544BC71005076D1 /* ReactionFadeTo.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03CFE5B41544BC71005076D1 /* ReactionFadeTo.bundle */; };
+		03CFE5B71544BC7C005076D1 /* ReactionFadeToggle.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03CFE5B61544BC7C005076D1 /* ReactionFadeToggle.bundle */; };
+		03CFE5B91544BC8A005076D1 /* ReactionHide.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03CFE5B81544BC8A005076D1 /* ReactionHide.bundle */; };
+		03CFE5BB1544BC98005076D1 /* ReactionShow.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03CFE5BA1544BC98005076D1 /* ReactionShow.bundle */; };
+		03CFE5BD1544BCA2005076D1 /* ReactionSlideDown.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03CFE5BC1544BCA2005076D1 /* ReactionSlideDown.bundle */; };
+		03CFE5BF1544BCB3005076D1 /* ReactionSlideToggle.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03CFE5BE1544BCB3005076D1 /* ReactionSlideToggle.bundle */; };
+		03CFE5C11544BCC2005076D1 /* ReactionSlideUp.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03CFE5C01544BCC2005076D1 /* ReactionSlideUp.bundle */; };
+		03CFE5C31544BCCC005076D1 /* ReactionToggle.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03CFE5C21544BCCC005076D1 /* ReactionToggle.bundle */; };
 		03E3C833154467440048D8F7 /* RSLocatorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03E3C832154467440048D8F7 /* RSLocatorView.xib */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		03CFE56C1544B955005076D1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				03CFE5BF1544BCB3005076D1 /* ReactionSlideToggle.bundle in CopyFiles */,
+				03CFE58B1544BB2C005076D1 /* ActionKeyPress.bundle in CopyFiles */,
+				03CFE57C1544BA98005076D1 /* ActionBlur.bundle in CopyFiles */,
+				03CFE57E1544BA9F005076D1 /* ActionChange.bundle in CopyFiles */,
+				03CFE5811544BAF0005076D1 /* ActionClick.bundle in CopyFiles */,
+				03CFE5831544BAFA005076D1 /* ActionDoubleClick.bundle in CopyFiles */,
+				03CFE5851544BB08005076D1 /* ActionDrop.bundle in CopyFiles */,
+				03CFE5871544BB16005076D1 /* ActionFocus.bundle in CopyFiles */,
+				03CFE5891544BB22005076D1 /* ActionKeyDown.bundle in CopyFiles */,
+				03CFE58D1544BB42005076D1 /* ActionKeyUp.bundle in CopyFiles */,
+				03CFE58F1544BB57005076D1 /* ActionMouseDown.bundle in CopyFiles */,
+				03CFE5911544BB61005076D1 /* ActionMouseOut.bundle in CopyFiles */,
+				03CFE5931544BB71005076D1 /* ActionMouseOver.bundle in CopyFiles */,
+				03CFE5951544BB7F005076D1 /* ActionMouseUp.bundle in CopyFiles */,
+				03CFE5971544BB8F005076D1 /* ActionPageLoad.bundle in CopyFiles */,
+				03CFE5991544BB9C005076D1 /* ActionPageUnload.bundle in CopyFiles */,
+				03CFE59B1544BBB2005076D1 /* ActionResize.bundle in CopyFiles */,
+				03CFE59D1544BBC4005076D1 /* ActionScroll.bundle in CopyFiles */,
+				03CFE59F1544BBD2005076D1 /* ActionSelect.bundle in CopyFiles */,
+				03CFE5A11544BBDD005076D1 /* ActionSubmit.bundle in CopyFiles */,
+				03CFE5A31544BBEF005076D1 /* ConditionHasClass.bundle in CopyFiles */,
+				03CFE5A51544BBF7005076D1 /* ConditionStatus.bundle in CopyFiles */,
+				03CFE5A71544BC13005076D1 /* NotImplementedPlugin.bundle in CopyFiles */,
+				03CFE5A91544BC27005076D1 /* ReactionAnimate.bundle in CopyFiles */,
+				03CFE5AB1544BC34005076D1 /* ReactionClassAdd.bundle in CopyFiles */,
+				03CFE5AD1544BC43005076D1 /* ReactionClassRemove.bundle in CopyFiles */,
+				03CFE5AF1544BC4F005076D1 /* ReactionClassToggle.bundle in CopyFiles */,
+				03CFE5B11544BC5A005076D1 /* ReactionFadeIn.bundle in CopyFiles */,
+				03CFE5B31544BC65005076D1 /* ReactionFadeOut.bundle in CopyFiles */,
+				03CFE5B51544BC71005076D1 /* ReactionFadeTo.bundle in CopyFiles */,
+				03CFE5B71544BC7C005076D1 /* ReactionFadeToggle.bundle in CopyFiles */,
+				03CFE5B91544BC8A005076D1 /* ReactionHide.bundle in CopyFiles */,
+				03CFE5BB1544BC98005076D1 /* ReactionShow.bundle in CopyFiles */,
+				03CFE5BD1544BCA2005076D1 /* ReactionSlideDown.bundle in CopyFiles */,
+				03CFE5C11544BCC2005076D1 /* ReactionSlideUp.bundle in CopyFiles */,
+				03CFE5C31544BCCC005076D1 /* ReactionToggle.bundle in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		037C3DDA15447DD800FEC73C /* zepto.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = zepto.min.js; sourceTree = "<group>"; };
+		037C3E521544B6B000FEC73C /* ActionBlur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActionBlur.h; path = "../../../Workspaces/Trixie Reunion/Plugins/Actions/ActionBlur/ActionBlur/ActionBlur.h"; sourceTree = "<group>"; };
+		037C3E541544B6C200FEC73C /* ActionChange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActionChange.h; path = "../../../Workspaces/Trixie Reunion/Plugins/Actions/ActionChange/ActionChange/ActionChange.h"; sourceTree = "<group>"; };
+		037C3E561544B6D000FEC73C /* ActionClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActionClick.h; path = "../../../Workspaces/Trixie Reunion/Plugins/Actions/ActionClick/ActionClick/ActionClick.h"; sourceTree = "<group>"; };
+		037C3E581544B6F400FEC73C /* ActionDoubleClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActionDoubleClick.h; path = "../../../Workspaces/Trixie Reunion/Plugins/Actions/ActionDoubleClick/ActionDoubleClick/ActionDoubleClick.h"; sourceTree = "<group>"; };
+		037C3E5A1544B70100FEC73C /* ActionDrop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActionDrop.h; path = "../../../Workspaces/Trixie Reunion/Plugins/Actions/ActionDrop/ActionDrop/ActionDrop.h"; sourceTree = "<group>"; };
+		037C3E5C1544B70F00FEC73C /* ActionFocus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActionFocus.h; path = "../../../Workspaces/Trixie Reunion/Plugins/Actions/ActionFocus/ActionFocus/ActionFocus.h"; sourceTree = "<group>"; };
+		037C3E5E1544B71D00FEC73C /* ActionKeyDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActionKeyDown.h; path = "../../../Workspaces/Trixie Reunion/Plugins/Actions/ActionKeyDown/ActionKeyDown/ActionKeyDown.h"; sourceTree = "<group>"; };
+		037C3E601544B72B00FEC73C /* ActionKeyPress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActionKeyPress.h; path = "../../../Workspaces/Trixie Reunion/Plugins/Actions/ActionKeyPress/ActionKeyPress/ActionKeyPress.h"; sourceTree = "<group>"; };
+		037C3E631544B75000FEC73C /* ActionKeyUp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActionKeyUp.h; path = "../../../Workspaces/Trixie Reunion/Plugins/Actions/ActionKeyUp/ActionKeyUp/ActionKeyUp.h"; sourceTree = "<group>"; };
+		037C3E651544B75B00FEC73C /* ActionMouseDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActionMouseDown.h; path = "../../../Workspaces/Trixie Reunion/Plugins/Actions/ActionMouseDown/ActionMouseDown/ActionMouseDown.h"; sourceTree = "<group>"; };
+		037C3E671544B76600FEC73C /* ActionMouseOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActionMouseOut.h; path = "../../../Workspaces/Trixie Reunion/Plugins/Actions/ActionMouseOut/ActionMouseOut/ActionMouseOut.h"; sourceTree = "<group>"; };
+		037C3E691544B77100FEC73C /* ActionMouseOver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActionMouseOver.h; path = "../../../Workspaces/Trixie Reunion/Plugins/Actions/ActionMouseOver/ActionMouseOver/ActionMouseOver.h"; sourceTree = "<group>"; };
+		037C3E6B1544B77B00FEC73C /* ActionMouseUp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActionMouseUp.h; path = "../../../Workspaces/Trixie Reunion/Plugins/Actions/ActionMouseUp/ActionMouseUp/ActionMouseUp.h"; sourceTree = "<group>"; };
+		037C3E6D1544B78700FEC73C /* ActionPageLoad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActionPageLoad.h; path = "../../../Workspaces/Trixie Reunion/Plugins/Actions/ActionPageLoad/ActionPageLoad/ActionPageLoad.h"; sourceTree = "<group>"; };
+		037C3E6F1544B79400FEC73C /* ActionPageUnload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActionPageUnload.h; path = "../../../Workspaces/Trixie Reunion/Plugins/Actions/ActionPageUnload/ActionPageUnload/ActionPageUnload/ActionPageUnload.h"; sourceTree = "<group>"; };
+		037C3E711544B79F00FEC73C /* ActionResize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActionResize.h; path = "../../../Workspaces/Trixie Reunion/Plugins/Actions/ActionResize/ActionResize/ActionResize.h"; sourceTree = "<group>"; };
+		037C3E731544B7A900FEC73C /* ActionScroll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActionScroll.h; path = "../../../Workspaces/Trixie Reunion/Plugins/Actions/ActionScroll/ActionScroll/ActionScroll.h"; sourceTree = "<group>"; };
+		037C3E751544B7B500FEC73C /* ActionSelect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActionSelect.h; path = "../../../Workspaces/Trixie Reunion/Plugins/Actions/ActionSelect/ActionSelect/ActionSelect.h"; sourceTree = "<group>"; };
+		037C3E771544B7BF00FEC73C /* ActionSubmit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActionSubmit.h; path = "../../../Workspaces/Trixie Reunion/Plugins/Actions/ActionSubmit/ActionSubmit/ActionSubmit.h"; sourceTree = "<group>"; };
+		037C3E791544B7CE00FEC73C /* ConditionHasClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConditionHasClass.h; path = "../../../Workspaces/Trixie Reunion/Plugins/Conditions/ConditionHasClass/ConditionHasClass/ConditionHasClass.h"; sourceTree = "<group>"; };
+		037C3E7B1544B7D800FEC73C /* ConditionStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConditionStatus.h; path = "../../../Workspaces/Trixie Reunion/Plugins/Conditions/ConditionStatus/ConditionStatus/ConditionStatus.h"; sourceTree = "<group>"; };
+		037C3E7D1544B7E400FEC73C /* ConditionValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConditionValue.h; path = "../../../Workspaces/Trixie Reunion/Plugins/Conditions/ConditionValue/ConditionValue/ConditionValue.h"; sourceTree = "<group>"; };
+		037C3E7F1544B7EF00FEC73C /* NotImplementedPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NotImplementedPlugin.h; path = "../../../Workspaces/Trixie Reunion/Plugins/NotImplementedPlugin/NotImplementedPlugin/NotImplementedPlugin.h"; sourceTree = "<group>"; };
+		037C3E811544B7FE00FEC73C /* ReactionAnimate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReactionAnimate.h; path = "../../../Workspaces/Trixie Reunion/Plugins/Reactions/ReactionAnimate/ReactionAnimate/ReactionAnimate.h"; sourceTree = "<group>"; };
+		037C3E831544B80600FEC73C /* ReactionClassAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReactionClassAdd.h; path = "../../../Workspaces/Trixie Reunion/Plugins/Reactions/ReactionClassAdd/ReactionClassAdd/ReactionClassAdd.h"; sourceTree = "<group>"; };
+		037C3E851544B81400FEC73C /* ReactionClassRemove.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReactionClassRemove.h; path = "../../../Workspaces/Trixie Reunion/Plugins/Reactions/ReactionClassRemove/ReactionClassRemove/ReactionClassRemove.h"; sourceTree = "<group>"; };
+		037C3E871544B81B00FEC73C /* ReactionClassToggle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReactionClassToggle.h; path = "../../../Workspaces/Trixie Reunion/Plugins/Reactions/ReactionClassToggle/ReactionClassToggle/ReactionClassToggle.h"; sourceTree = "<group>"; };
+		037C3E891544B82500FEC73C /* ReactionFadeIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReactionFadeIn.h; path = "../../../Workspaces/Trixie Reunion/Plugins/Reactions/ReactionFadeIn/ReactionFadeIn/ReactionFadeIn.h"; sourceTree = "<group>"; };
+		037C3E8B1544B83200FEC73C /* ReactionFadeOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReactionFadeOut.h; path = "../../../Workspaces/Trixie Reunion/Plugins/Reactions/ReactionFadeOut/ReactionFadeOut/ReactionFadeOut.h"; sourceTree = "<group>"; };
+		037C3E8D1544B83D00FEC73C /* ReactionFadeTo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReactionFadeTo.h; path = "../../../Workspaces/Trixie Reunion/Plugins/Reactions/ReactionFadeTo/ReactionFadeTo/ReactionFadeTo.h"; sourceTree = "<group>"; };
+		037C3E8F1544B84600FEC73C /* ReactionFadeToggle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReactionFadeToggle.h; path = "../../../Workspaces/Trixie Reunion/Plugins/Reactions/ReactionFadeToggle/ReactionFadeToggle/ReactionFadeToggle.h"; sourceTree = "<group>"; };
+		037C3E911544B85600FEC73C /* ReactionHide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReactionHide.h; path = "../../../Workspaces/Trixie Reunion/Plugins/Reactions/ReactionHide/ReactionHide/ReactionHide.h"; sourceTree = "<group>"; };
+		037C3E931544B86700FEC73C /* ReactionShow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReactionShow.h; path = "../../../Workspaces/Trixie Reunion/Plugins/Reactions/ReactionShow/ReactionShow/ReactionShow.h"; sourceTree = "<group>"; };
+		037C3E951544B87600FEC73C /* ReactionSlideDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReactionSlideDown.h; path = "../../../Workspaces/Trixie Reunion/Plugins/Reactions/ReactionSlideDown/ReactionSlideDown/ReactionSlideDown.h"; sourceTree = "<group>"; };
 		03943DDE15436B9000A4E411 /* WebView+RSConvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WebView+RSConvert.h"; sourceTree = "<group>"; };
 		03943DDF15436B9000A4E411 /* WebView+RSConvert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WebView+RSConvert.m"; sourceTree = "<group>"; };
 		03975D7615350B49000C9EA0 /* Trixie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trixie.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +232,45 @@
 		03A39027153B49D300915FEA /* RSLocatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSLocatorView.m; sourceTree = "<group>"; };
 		03A8FE39153FBD8C0021B21A /* RSPopoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSPopoverViewController.h; sourceTree = "<group>"; };
 		03A8FE3A153FBD8C0021B21A /* RSPopoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSPopoverViewController.m; sourceTree = "<group>"; };
+		03CFE5651544B8A3005076D1 /* ReactionSlideToggle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReactionSlideToggle.h; path = "../../../Workspaces/Trixie Reunion/Plugins/Reactions/ReactionSlideToggle/ReactionSlideToggle/ReactionSlideToggle.h"; sourceTree = "<group>"; };
+		03CFE5681544B8AF005076D1 /* ReactionSlideUp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReactionSlideUp.h; path = "../../../Workspaces/Trixie Reunion/Plugins/Reactions/ReactionSlideUp/ReactionSlideUp/ReactionSlideUp.h"; sourceTree = "<group>"; };
+		03CFE56A1544B8F3005076D1 /* ReactionToggle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReactionToggle.h; path = "../../../Workspaces/Trixie Reunion/Plugins/Reactions/ReactionShow/ReactionShow/ReactionToggle.h"; sourceTree = "<group>"; };
+		03CFE57B1544BA98005076D1 /* ActionBlur.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ActionBlur.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		03CFE57D1544BA9F005076D1 /* ActionChange.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ActionChange.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		03CFE5801544BAF0005076D1 /* ActionClick.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ActionClick.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		03CFE5821544BAFA005076D1 /* ActionDoubleClick.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ActionDoubleClick.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		03CFE5841544BB08005076D1 /* ActionDrop.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ActionDrop.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		03CFE5861544BB16005076D1 /* ActionFocus.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ActionFocus.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		03CFE5881544BB22005076D1 /* ActionKeyDown.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ActionKeyDown.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		03CFE58A1544BB2C005076D1 /* ActionKeyPress.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ActionKeyPress.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		03CFE58C1544BB42005076D1 /* ActionKeyUp.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ActionKeyUp.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		03CFE58E1544BB57005076D1 /* ActionMouseDown.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ActionMouseDown.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		03CFE5901544BB61005076D1 /* ActionMouseOut.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ActionMouseOut.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		03CFE5921544BB71005076D1 /* ActionMouseOver.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ActionMouseOver.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		03CFE5941544BB7F005076D1 /* ActionMouseUp.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ActionMouseUp.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		03CFE5961544BB8F005076D1 /* ActionPageLoad.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ActionPageLoad.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		03CFE5981544BB9C005076D1 /* ActionPageUnload.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ActionPageUnload.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		03CFE59A1544BBB2005076D1 /* ActionResize.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ActionResize.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		03CFE59C1544BBC4005076D1 /* ActionScroll.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ActionScroll.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		03CFE59E1544BBD2005076D1 /* ActionSelect.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ActionSelect.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		03CFE5A01544BBDD005076D1 /* ActionSubmit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ActionSubmit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		03CFE5A21544BBEF005076D1 /* ConditionHasClass.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ConditionHasClass.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		03CFE5A41544BBF7005076D1 /* ConditionStatus.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ConditionStatus.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		03CFE5A61544BC13005076D1 /* NotImplementedPlugin.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = NotImplementedPlugin.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		03CFE5A81544BC27005076D1 /* ReactionAnimate.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ReactionAnimate.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		03CFE5AA1544BC34005076D1 /* ReactionClassAdd.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ReactionClassAdd.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		03CFE5AC1544BC43005076D1 /* ReactionClassRemove.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ReactionClassRemove.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		03CFE5AE1544BC4F005076D1 /* ReactionClassToggle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ReactionClassToggle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		03CFE5B01544BC5A005076D1 /* ReactionFadeIn.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ReactionFadeIn.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		03CFE5B21544BC65005076D1 /* ReactionFadeOut.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ReactionFadeOut.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		03CFE5B41544BC71005076D1 /* ReactionFadeTo.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ReactionFadeTo.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		03CFE5B61544BC7C005076D1 /* ReactionFadeToggle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ReactionFadeToggle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		03CFE5B81544BC8A005076D1 /* ReactionHide.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ReactionHide.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		03CFE5BA1544BC98005076D1 /* ReactionShow.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ReactionShow.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		03CFE5BC1544BCA2005076D1 /* ReactionSlideDown.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ReactionSlideDown.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		03CFE5BE1544BCB3005076D1 /* ReactionSlideToggle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ReactionSlideToggle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		03CFE5C01544BCC2005076D1 /* ReactionSlideUp.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ReactionSlideUp.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		03CFE5C21544BCCC005076D1 /* ReactionToggle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ReactionToggle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		03E3C832154467440048D8F7 /* RSLocatorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RSLocatorView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,6 +288,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		037C3E621544B73600FEC73C /* Plugin Headers */ = {
+			isa = PBXGroup;
+			children = (
+				037C3E521544B6B000FEC73C /* ActionBlur.h */,
+				037C3E541544B6C200FEC73C /* ActionChange.h */,
+				037C3E561544B6D000FEC73C /* ActionClick.h */,
+				037C3E581544B6F400FEC73C /* ActionDoubleClick.h */,
+				037C3E5A1544B70100FEC73C /* ActionDrop.h */,
+				037C3E5C1544B70F00FEC73C /* ActionFocus.h */,
+				037C3E5E1544B71D00FEC73C /* ActionKeyDown.h */,
+				037C3E601544B72B00FEC73C /* ActionKeyPress.h */,
+				037C3E631544B75000FEC73C /* ActionKeyUp.h */,
+				037C3E651544B75B00FEC73C /* ActionMouseDown.h */,
+				037C3E671544B76600FEC73C /* ActionMouseOut.h */,
+				037C3E691544B77100FEC73C /* ActionMouseOver.h */,
+				037C3E6B1544B77B00FEC73C /* ActionMouseUp.h */,
+				037C3E6D1544B78700FEC73C /* ActionPageLoad.h */,
+				037C3E6F1544B79400FEC73C /* ActionPageUnload.h */,
+				037C3E711544B79F00FEC73C /* ActionResize.h */,
+				037C3E731544B7A900FEC73C /* ActionScroll.h */,
+				037C3E751544B7B500FEC73C /* ActionSelect.h */,
+				037C3E771544B7BF00FEC73C /* ActionSubmit.h */,
+				037C3E791544B7CE00FEC73C /* ConditionHasClass.h */,
+				037C3E7B1544B7D800FEC73C /* ConditionStatus.h */,
+				037C3E7D1544B7E400FEC73C /* ConditionValue.h */,
+				037C3E7F1544B7EF00FEC73C /* NotImplementedPlugin.h */,
+				037C3E811544B7FE00FEC73C /* ReactionAnimate.h */,
+				037C3E831544B80600FEC73C /* ReactionClassAdd.h */,
+				037C3E851544B81400FEC73C /* ReactionClassRemove.h */,
+				037C3E871544B81B00FEC73C /* ReactionClassToggle.h */,
+				037C3E891544B82500FEC73C /* ReactionFadeIn.h */,
+				037C3E8B1544B83200FEC73C /* ReactionFadeOut.h */,
+				037C3E8D1544B83D00FEC73C /* ReactionFadeTo.h */,
+				037C3E8F1544B84600FEC73C /* ReactionFadeToggle.h */,
+				037C3E911544B85600FEC73C /* ReactionHide.h */,
+				037C3E931544B86700FEC73C /* ReactionShow.h */,
+				037C3E951544B87600FEC73C /* ReactionSlideDown.h */,
+				03CFE5651544B8A3005076D1 /* ReactionSlideToggle.h */,
+				03CFE5681544B8AF005076D1 /* ReactionSlideUp.h */,
+				03CFE56A1544B8F3005076D1 /* ReactionToggle.h */,
+			);
+			name = "Plugin Headers";
+			sourceTree = "<group>";
+		};
 		03975D6B15350B49000C9EA0 = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +400,8 @@
 		03975D8115350B49000C9EA0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				03CFE5C41544BD09005076D1 /* Plugins */,
+				037C3E621544B73600FEC73C /* Plugin Headers */,
 				037C3DDA15447DD800FEC73C /* zepto.min.js */,
 				03975E741539412D000C9EA0 /* ResponderTrace.h */,
 				03975E751539412D000C9EA0 /* ResponderTrace.m */,
@@ -192,7 +432,98 @@
 			name = Categories;
 			sourceTree = "<group>";
 		};
+		03CFE5C41544BD09005076D1 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				03CFE5C21544BCCC005076D1 /* ReactionToggle.bundle */,
+				03CFE5C01544BCC2005076D1 /* ReactionSlideUp.bundle */,
+				03CFE5BE1544BCB3005076D1 /* ReactionSlideToggle.bundle */,
+				03CFE5BC1544BCA2005076D1 /* ReactionSlideDown.bundle */,
+				03CFE5BA1544BC98005076D1 /* ReactionShow.bundle */,
+				03CFE5B81544BC8A005076D1 /* ReactionHide.bundle */,
+				03CFE5B61544BC7C005076D1 /* ReactionFadeToggle.bundle */,
+				03CFE5B41544BC71005076D1 /* ReactionFadeTo.bundle */,
+				03CFE5B21544BC65005076D1 /* ReactionFadeOut.bundle */,
+				03CFE5B01544BC5A005076D1 /* ReactionFadeIn.bundle */,
+				03CFE5AE1544BC4F005076D1 /* ReactionClassToggle.bundle */,
+				03CFE5AC1544BC43005076D1 /* ReactionClassRemove.bundle */,
+				03CFE5AA1544BC34005076D1 /* ReactionClassAdd.bundle */,
+				03CFE5A81544BC27005076D1 /* ReactionAnimate.bundle */,
+				03CFE5A61544BC13005076D1 /* NotImplementedPlugin.bundle */,
+				03CFE5A41544BBF7005076D1 /* ConditionStatus.bundle */,
+				03CFE5A21544BBEF005076D1 /* ConditionHasClass.bundle */,
+				03CFE5A01544BBDD005076D1 /* ActionSubmit.bundle */,
+				03CFE59E1544BBD2005076D1 /* ActionSelect.bundle */,
+				03CFE59C1544BBC4005076D1 /* ActionScroll.bundle */,
+				03CFE59A1544BBB2005076D1 /* ActionResize.bundle */,
+				03CFE5981544BB9C005076D1 /* ActionPageUnload.bundle */,
+				03CFE5961544BB8F005076D1 /* ActionPageLoad.bundle */,
+				03CFE5941544BB7F005076D1 /* ActionMouseUp.bundle */,
+				03CFE5921544BB71005076D1 /* ActionMouseOver.bundle */,
+				03CFE5901544BB61005076D1 /* ActionMouseOut.bundle */,
+				03CFE58E1544BB57005076D1 /* ActionMouseDown.bundle */,
+				03CFE58C1544BB42005076D1 /* ActionKeyUp.bundle */,
+				03CFE58A1544BB2C005076D1 /* ActionKeyPress.bundle */,
+				03CFE5881544BB22005076D1 /* ActionKeyDown.bundle */,
+				03CFE5861544BB16005076D1 /* ActionFocus.bundle */,
+				03CFE5841544BB08005076D1 /* ActionDrop.bundle */,
+				03CFE5821544BAFA005076D1 /* ActionDoubleClick.bundle */,
+				03CFE5801544BAF0005076D1 /* ActionClick.bundle */,
+				03CFE57D1544BA9F005076D1 /* ActionChange.bundle */,
+				03CFE57B1544BA98005076D1 /* ActionBlur.bundle */,
+			);
+			name = Plugins;
+			path = ..;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		037C3DE51544B4D800FEC73C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				037C3E531544B6B100FEC73C /* ActionBlur.h in Headers */,
+				037C3E551544B6C200FEC73C /* ActionChange.h in Headers */,
+				037C3E571544B6D000FEC73C /* ActionClick.h in Headers */,
+				037C3E591544B6F400FEC73C /* ActionDoubleClick.h in Headers */,
+				037C3E5B1544B70100FEC73C /* ActionDrop.h in Headers */,
+				037C3E5D1544B70F00FEC73C /* ActionFocus.h in Headers */,
+				037C3E5F1544B71D00FEC73C /* ActionKeyDown.h in Headers */,
+				037C3E611544B72B00FEC73C /* ActionKeyPress.h in Headers */,
+				037C3E641544B75000FEC73C /* ActionKeyUp.h in Headers */,
+				037C3E661544B75B00FEC73C /* ActionMouseDown.h in Headers */,
+				037C3E681544B76600FEC73C /* ActionMouseOut.h in Headers */,
+				037C3E6A1544B77100FEC73C /* ActionMouseOver.h in Headers */,
+				037C3E6C1544B77B00FEC73C /* ActionMouseUp.h in Headers */,
+				037C3E6E1544B78700FEC73C /* ActionPageLoad.h in Headers */,
+				037C3E701544B79400FEC73C /* ActionPageUnload.h in Headers */,
+				037C3E721544B79F00FEC73C /* ActionResize.h in Headers */,
+				037C3E741544B7A900FEC73C /* ActionScroll.h in Headers */,
+				037C3E761544B7B500FEC73C /* ActionSelect.h in Headers */,
+				037C3E781544B7BF00FEC73C /* ActionSubmit.h in Headers */,
+				037C3E7A1544B7CE00FEC73C /* ConditionHasClass.h in Headers */,
+				037C3E7C1544B7D800FEC73C /* ConditionStatus.h in Headers */,
+				037C3E7E1544B7E400FEC73C /* ConditionValue.h in Headers */,
+				037C3E801544B7EF00FEC73C /* NotImplementedPlugin.h in Headers */,
+				037C3E821544B7FE00FEC73C /* ReactionAnimate.h in Headers */,
+				037C3E841544B80600FEC73C /* ReactionClassAdd.h in Headers */,
+				037C3E861544B81400FEC73C /* ReactionClassRemove.h in Headers */,
+				037C3E881544B81B00FEC73C /* ReactionClassToggle.h in Headers */,
+				037C3E8A1544B82500FEC73C /* ReactionFadeIn.h in Headers */,
+				037C3E8C1544B83200FEC73C /* ReactionFadeOut.h in Headers */,
+				037C3E8E1544B83D00FEC73C /* ReactionFadeTo.h in Headers */,
+				037C3E901544B84600FEC73C /* ReactionFadeToggle.h in Headers */,
+				037C3E921544B85600FEC73C /* ReactionHide.h in Headers */,
+				037C3E941544B86700FEC73C /* ReactionShow.h in Headers */,
+				037C3E961544B87600FEC73C /* ReactionSlideDown.h in Headers */,
+				03CFE5661544B8A3005076D1 /* ReactionSlideToggle.h in Headers */,
+				03CFE5691544B8AF005076D1 /* ReactionSlideUp.h in Headers */,
+				03CFE56B1544B8F3005076D1 /* ReactionToggle.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		03975D7515350B49000C9EA0 /* Trixie */ = {
@@ -202,6 +533,8 @@
 				03975D7215350B49000C9EA0 /* Sources */,
 				03975D7315350B49000C9EA0 /* Frameworks */,
 				03975D7415350B49000C9EA0 /* Resources */,
+				037C3DE51544B4D800FEC73C /* Headers */,
+				03CFE56C1544B955005076D1 /* CopyFiles */,
 			);
 			buildRules = (
 			);
