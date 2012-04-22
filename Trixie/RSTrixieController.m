@@ -33,21 +33,10 @@
     return self;
 }
 
-
-- (void)windowDidLoad
-{
+- (void)windowDidLoad {
     [super windowDidLoad];
     
-    // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
-	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshWebviewOverlay:) name:NSWindowDidResizeNotification object:[webview window]];
 }
-
-
-- (void) refreshWebviewOverlay:(NSNotification*)nota {
-	NSLog(@"%s- [%04d] %@", __PRETTY_FUNCTION__, __LINE__, @"");
-	[[self webview] repositionLocatorViews];
-}
-
 
 #pragma mark - WebView Browser methods
 
@@ -181,9 +170,7 @@
 	}
 	return selector;
 }
-
-
-- (void) annotateDOMNodes:(DOMNode *)parent {
+- (void)		annotateDOMNodes:(DOMNode *)parent {
 	
 	//	NSLog(@"%s- [%04d] %@", __PRETTY_FUNCTION__, __LINE__, [parent nodeName]);
 	
@@ -203,18 +190,16 @@
 	}		
 }
 
-
 #pragma mark - NSComboBox datasource methods 
 
 - (NSInteger)	numberOfItemsInComboBoxCell:(NSComboBoxCell *)aComboBox {
 	return [history count];
 }
-- (id) comboBoxCell:(NSComboBoxCell *)aComboBox objectValueForItemAtIndex:(NSInteger)index {
+
+- (id)			comboBoxCell:(NSComboBoxCell *)aComboBox objectValueForItemAtIndex:(NSInteger)index {
 	WebHistoryItem * item = [history objectAtIndex:index];
 	return [item URLString];
 }
-
-
 
 /**
 - (NSArray *)	webView:(WebView *)sender contextMenuItemsForElement:(NSDictionary *)element defaultMenuItems:(NSArray *)defaultMenuItems {

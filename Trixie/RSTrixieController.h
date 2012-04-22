@@ -33,7 +33,6 @@
 - (void)		webView:(WebView*) sender makeFirstResponder:(NSResponder *)responder;
 // - (NSArray *)	webView:(WebView *)sender contextMenuItemsForElement:(NSDictionary *)element defaultMenuItems:(NSArray *)defaultMenuItems;
 
-- (void) refreshWebviewOverlay:(NSNotification*)nota;
 
 #pragma mark - NSComboBox datasource methods
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		037C3DDB15447DD800FEC73C /* zepto.min.js in Sources */ = {isa = PBXBuildFile; fileRef = 037C3DDA15447DD800FEC73C /* zepto.min.js */; };
 		03943DE015436B9000A4E411 /* WebView+RSConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 03943DDF15436B9000A4E411 /* WebView+RSConvert.m */; };
 		03975D7B15350B49000C9EA0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03975D7A15350B49000C9EA0 /* Cocoa.framework */; };
 		03975D8515350B49000C9EA0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03975D8315350B49000C9EA0 /* InfoPlist.strings */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		037C3DDA15447DD800FEC73C /* zepto.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = zepto.min.js; sourceTree = "<group>"; };
 		03943DDE15436B9000A4E411 /* WebView+RSConvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WebView+RSConvert.h"; sourceTree = "<group>"; };
 		03943DDF15436B9000A4E411 /* WebView+RSConvert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WebView+RSConvert.m"; sourceTree = "<group>"; };
 		03975D7615350B49000C9EA0 /* Trixie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trixie.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -134,8 +136,6 @@
 			isa = PBXGroup;
 			children = (
 				03975D8C15350B49000C9EA0 /* RSAppDelegate.h */,
-				03943DDE15436B9000A4E411 /* WebView+RSConvert.h */,
-				03943DDF15436B9000A4E411 /* WebView+RSConvert.m */,
 				03975D8D15350B49000C9EA0 /* RSAppDelegate.m */,
 				03975E481539317A000C9EA0 /* RSTrixieController.h */,
 				03975E491539317A000C9EA0 /* RSTrixieController.m */,
@@ -162,6 +162,7 @@
 		03975D8115350B49000C9EA0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				037C3DDA15447DD800FEC73C /* zepto.min.js */,
 				03975E741539412D000C9EA0 /* ResponderTrace.h */,
 				03975E751539412D000C9EA0 /* ResponderTrace.m */,
 				03975E6715393B50000C9EA0 /* Categories */,
@@ -181,6 +182,8 @@
 			children = (
 				03975E6E1539412D000C9EA0 /* DOMElement+RSLDOMExtensions.h */,
 				03975E6F1539412D000C9EA0 /* DOMElement+RSLDOMExtensions.m */,
+				03943DDE15436B9000A4E411 /* WebView+RSConvert.h */,
+				03943DDF15436B9000A4E411 /* WebView+RSConvert.m */,
 				03975E701539412D000C9EA0 /* NSBezierPath+Goemetry.h */,
 				03975E711539412D000C9EA0 /* NSBezierPath+Goemetry.m */,
 				03975E721539412D000C9EA0 /* NSView+RSPositionView.h */,
@@ -271,6 +274,7 @@
 				03A39028153B49D300915FEA /* RSLocatorView.m in Sources */,
 				03A8FE3B153FBD8C0021B21A /* RSPopoverViewController.m in Sources */,
 				03943DE015436B9000A4E411 /* WebView+RSConvert.m in Sources */,
+				037C3DDB15447DD800FEC73C /* zepto.min.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

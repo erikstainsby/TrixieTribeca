@@ -7,18 +7,19 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "RSBoundingBox.h"
 #import "RSWebView.h"
 
 @interface RSLocatorView : NSView
 
+@property (retain) IBOutlet DOMElement * node;
 @property (retain) IBOutlet NSButton * locatorButton;
 @property (assign) NSInteger tag;
 @property (assign) NSTrackingRectTag trackingRectTag;
 
-- (id) representedObject;
-- (BOOL) acceptsFirstResponder;
+
 - (IBAction) requestPopover:(id)sender;
-	//- (IBAction) removeLocatorButton:(id)sender;
+- (id)		 representedObject;
+- (BOOL)	 acceptsFirstResponder;
+- (void)	 updateTrackingAreas;
 
 @end

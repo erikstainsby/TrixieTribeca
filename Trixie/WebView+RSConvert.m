@@ -16,7 +16,7 @@
  **/
 - (NSRect) flipBoundingBox:(NSRect)htmlBox fromWebView:(WebView*)webView {
 	NSRect bounds = [[[webView window] contentView] bounds];
-	float newY = bounds.size.height - htmlBox.size.height - htmlBox.origin.y;
+	float newY = bounds.size.height - (htmlBox.size.height + htmlBox.origin.y);
 	return NSMakeRect(htmlBox.origin.x,newY,htmlBox.size.width, htmlBox.size.height);
 }
 

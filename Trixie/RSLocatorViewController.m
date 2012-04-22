@@ -7,7 +7,7 @@
 //
 
 #import "RSLocatorViewController.h"
-#import "RSLocatorView.h"
+
 
 @interface RSLocatorViewController ()
 
@@ -16,6 +16,7 @@
 @implementation RSLocatorViewController
 
 @synthesize button;
+@synthesize node = _node;
 
 - (id)init
 {
@@ -26,6 +27,21 @@
     return self;
 }
 
+
+- (DOMElement*) node {
+	return _node;
+}
+
+- (void) setNode: aNode {
+	if( DOM_TEXT_NODE == [aNode nodeType]) {
+		_node = [aNode parentElement];
+	}
+	else {
+		_node = aNode;
+	}
+	
+	[(RSLocatorView*)[self view] setNode: _node];
+}
 
 
 @end

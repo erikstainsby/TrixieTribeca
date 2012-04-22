@@ -7,9 +7,12 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "RSLocatorView.h"
 
 @interface RSPopoverViewController : NSViewController
 
+@property (retain) IBOutlet NSTextField * contextNote;
+@property (assign) IBOutlet id locator;
 @property (retain) IBOutlet NSPopover * popover;
 
 @end

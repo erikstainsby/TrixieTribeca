@@ -18,18 +18,18 @@
 }
 
 @property (retain) IBOutlet RSTrixieController * trixie;
-@property (retain) IBOutlet NSMutableDictionary * locators;
+@property (retain) IBOutlet NSMutableDictionary * viewControllers;
 @property (retain) RSBoundingBox * boundingBox;
 @property (assign) NSTrackingRectTag trackingRectTag;
 @property (retain) IBOutlet NSMutableDictionary * taggedNodes;
 
 - (BOOL) acceptsFirstResponder;
 - (void) removeBoundingBox;
-- (RSBoundingBox*) boundingBoxForNodeTag:(NSString*)tag;
+- (RSBoundingBox*) boundingBoxForNodeWithTag:(NSString*)idtag;
 - (NSRect) frameRelativeTo:(RSBoundingBox*) bbox;
-- (NSRect) frameRelativeForTag:(NSString *) tag;
+- (NSRect) frameRelativeForTag:(NSString *) idtag;
+
 - (IBAction) removeLocatorFromDict:(id)sender;
-- (void) repositionLocatorViews;
 - (void) tagElement:(NSNotification*)notification;
 - (void) updateTrackingAreas;
 
