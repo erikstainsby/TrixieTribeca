@@ -20,7 +20,7 @@
 		// default
 		[self setDisplayCoordinates:NO];
 		
-		NSFont * font = [[NSFontManager sharedFontManager] fontWithFamily:@"Menlo" traits:NSUnboldFontMask weight:7 size:11];
+		NSFont * font = [[NSFontManager sharedFontManager] fontWithFamily:@"Menlo" traits:NSUnboldFontMask weight:7 size:9];
 		NSColor * fgColor = [NSColor blueColor];
 		attr = [NSDictionary dictionaryWithObjectsAndKeys:font,NSFontAttributeName, fgColor, NSForegroundColorAttributeName, nil];
     }
@@ -49,7 +49,7 @@
 	
 		NSSize ss = [str size];
 		NSPoint pt = r.origin;
-		float w = ss.width + 6; // a bit of room
+		float w = ss.width;
 		pt.x = r.size.width - w;
 
 		NSRect bb = NSMakeRect(pt.x,pt.y,w,ss.height);

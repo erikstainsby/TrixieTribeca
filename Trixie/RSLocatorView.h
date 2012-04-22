@@ -16,6 +16,7 @@
 @property (assign) NSInteger tag;
 @property (assign) NSTrackingRectTag trackingRectTag;
 
+- (id) representedObject;
 - (BOOL) acceptsFirstResponder;
 - (IBAction) requestPopover:(id)sender;
 	//- (IBAction) removeLocatorButton:(id)sender;

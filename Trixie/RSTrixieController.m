@@ -44,6 +44,7 @@
 
 
 - (void) refreshWebviewOverlay:(NSNotification*)nota {
+	NSLog(@"%s- [%04d] %@", __PRETTY_FUNCTION__, __LINE__, @"");
 	[[self webview] repositionLocatorViews];
 }
 

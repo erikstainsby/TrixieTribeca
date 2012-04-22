@@ -7,14 +7,14 @@
 //
 
 #import "RSWebView.h"
+#import "WebView+RSConvert.h"
 
 @implementation RSWebView
 
 @synthesize trixie;
+@synthesize trackingRectTag;
 @synthesize boundingBox;
 @synthesize locators; 
-@synthesize trackingRectTag;
-
 @synthesize taggedNodes;
 
 - (void) awakeFromNib {
@@ -36,7 +36,6 @@
 }
 
 - (DOMNode*) nodeForTag:(NSString*)tag {
-	NSLog(@"%s- [%04d] %@", __PRETTY_FUNCTION__, __LINE__, @"");
 	return [taggedNodes objectForKey:tag];
 }
 
@@ -55,14 +54,22 @@
 }
 
 - (void) repositionLocatorViews {
+	
+	// clean up
+	[self removeBoundingBox];
+		
 	for(NSString * idtag in [taggedNodes allKeys]) 
 	{
+		//	NSLog(@"%s- [%04d] repositioning: %@", __PRETTY_FUNCTION__, __LINE__, idtag);
+		
 		DOMElement * node = [taggedNodes objectForKey:idtag];
 		RSBoundingBox * bbox = [[RSBoundingBox alloc] initWithFrame:[node boundingBox]];
+		NSRect newBox = [self flipBoundingBox:[bbox frame] fromWebView:self];
+		[bbox setFrame:newBox];
 		RSLocatorViewController * lv = [locators objectForKey:idtag];
-		[[lv view]setFrame:[self frameRelativeTo:bbox]];
+		[[lv view]setFrame: [self frameRelativeTo:bbox]];
 	}
-}
+} 
 
 - (void) tagElement:(NSNotification*) notification {
 	
@@ -81,7 +88,7 @@
 	
 	// 20 x 20 at top-left of bounding box
 	NSRect tempFrame = [self frameRelativeTo:temp];
-	NSLog(@"%s- [%04d] tempFrame: %@", __PRETTY_FUNCTION__, __LINE__, NSStringFromRect(tempFrame));
+	//	NSLog(@"%s- [%04d] tempFrame: %@", __PRETTY_FUNCTION__, __LINE__, NSStringFromRect(tempFrame));
 	[tempLocator setFrame: tempFrame];
 
 	if( DOM_ELEMENT_NODE == [node nodeType]) 
@@ -106,6 +113,7 @@
 		NSLog(@"%s- [%04d] %lu", __PRETTY_FUNCTION__, __LINE__, [tempLocator tag]);
 	}
 	else {
+		// DOM_TEXT_NODE - use parent node
 		DOMElement * parent = (DOMElement*)[node parentNode];
 		[tempLocator setTag: [[parent getAttribute:kRSTrixieIdKeyName] integerValue]];
 		NSLog(@"%s- [%04d] %@: data-trixie-id: %@", __PRETTY_FUNCTION__, __LINE__, [parent tagName],[parent getAttribute:@"data-trixie-id"]);

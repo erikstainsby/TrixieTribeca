@@ -25,6 +25,7 @@
 		
 		[[self locatorButton] setTarget:self];
 		[[self locatorButton] setAction:@selector(requestPopover:)];
+		
     }
     return self;
 }
@@ -32,7 +33,13 @@
 
 - (IBAction) requestPopover:(id)sender {
 	NSLog(@"%s- [%04d] %@", __PRETTY_FUNCTION__, __LINE__, [sender className]);
-	[[NSNotificationCenter defaultCenter] postNotificationName:RSPopoverRequestedNotification object:locatorButton];
+	
+	[[NSNotificationCenter defaultCenter] postNotificationName:RSPopoverRequestedNotification object:sender];
+}
+
+
+- (id) representedObject {
+	return self;
 }
 
 

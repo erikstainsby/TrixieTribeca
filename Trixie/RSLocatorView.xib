@@ -39,69 +39,65 @@
 				<reference key="NSNextResponder"/>
 				<int key="NSvFlags">268</int>
 				<array class="NSMutableArray" key="NSSubviews">
-					<object class="NSButton" id="378080861">
+					<object class="NSButton" id="722781632">
 						<reference key="NSNextResponder" ref="1005"/>
 						<int key="NSvFlags">268</int>
-						<string key="NSFrame">{{0, -1}, {18, 19}}</string>
+						<string key="NSFrame">{{-6, -10}, {30, 30}}</string>
 						<reference key="NSSuperview" ref="1005"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView"/>
-						<string key="NSReuseIdentifierKey">_NS:9</string>
+						<string key="NSReuseIdentifierKey">_NS:1529</string>
 						<bool key="NSEnabled">YES</bool>
-						<object class="NSButtonCell" key="NSCell" id="12384733">
-							<int key="NSCellFlags">-2080244224</int>
-							<int key="NSCellFlags2">134217728</int>
+						<object class="NSButtonCell" key="NSCell" id="585593796">
+							<int key="NSCellFlags">67239424</int>
+							<int key="NSCellFlags2">262144</int>
 							<string key="NSContents"/>
 							<object class="NSFont" key="NSSupport">
 								<string key="NSName">LucidaGrande</string>
-								<double key="NSSize">12</double>
-								<int key="NSfFlags">16</int>
+								<double key="NSSize">9</double>
+								<int key="NSfFlags">3614</int>
 							</object>
-							<string key="NSCellIdentifier">_NS:9</string>
-							<reference key="NSControlView" ref="378080861"/>
-							<int key="NSButtonFlags">-2038152961</int>
-							<int key="NSButtonFlags2">164</int>
+							<string key="NSCellIdentifier">_NS:1529</string>
+							<reference key="NSControlView" ref="722781632"/>
+							<int key="NSButtonFlags">-2037645057</int>
+							<int key="NSButtonFlags2">135</int>
 							<string key="NSAlternateContents"/>
 							<string key="NSKeyEquivalent"/>
-							<int key="NSPeriodicDelay">400</int>
-							<int key="NSPeriodicInterval">75</int>
-							<object class="NSCustomResource" key="NSSound">
-								<string key="NSClassName">NSSound</string>
-								<string key="NSResourceName">Blow</string>
-							</object>
+							<int key="NSPeriodicDelay">200</int>
+							<int key="NSPeriodicInterval">25</int>
 						</object>
 					</object>
 				</array>
-				<string key="NSFrameSize">{18, 18}</string>
+				<string key="NSFrameSize">{17, 17}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
-				<reference key="NSNextKeyView" ref="378080861"/>
+				<reference key="NSNextKeyView" ref="722781632"/>
 				<string key="NSClassName">RSLocatorView</string>
 			</object>
-			<object class="NSMenu" id="770884176">
+			<object class="NSMenu" id="19233514">
 				<string key="NSTitle"/>
 				<array class="NSMutableArray" key="NSMenuItems">
-					<object class="NSMenuItem" id="514729001">
-						<reference key="NSMenu" ref="770884176"/>
+					<object class="NSMenuItem" id="934546761">
+						<reference key="NSMenu" ref="19233514"/>
 						<string key="NSTitle">Edit</string>
 						<string key="NSKeyEquiv"/>
 						<int key="NSMnemonicLoc">2147483647</int>
-						<object class="NSCustomResource" key="NSOnImage" id="972015853">
+						<object class="NSCustomResource" key="NSOnImage" id="80411601">
 							<string key="NSClassName">NSImage</string>
 							<string key="NSResourceName">NSMenuCheckmark</string>
 						</object>
-						<object class="NSCustomResource" key="NSMixedImage" id="383684089">
+						<object class="NSCustomResource" key="NSMixedImage" id="4844670">
 							<string key="NSClassName">NSImage</string>
 							<string key="NSResourceName">NSMenuMixedState</string>
 						</object>
 					</object>
-					<object class="NSMenuItem" id="244036690">
-						<reference key="NSMenu" ref="770884176"/>
+					<object class="NSMenuItem" id="1038427270">
+						<reference key="NSMenu" ref="19233514"/>
 						<string key="NSTitle">Delete</string>
 						<string key="NSKeyEquiv"/>
 						<int key="NSMnemonicLoc">2147483647</int>
-						<reference key="NSOnImage" ref="972015853"/>
-						<reference key="NSMixedImage" ref="383684089"/>
+						<reference key="NSOnImage" ref="80411601"/>
+						<reference key="NSMixedImage" ref="4844670"/>
 					</object>
 				</array>
 			</object>
@@ -110,59 +106,59 @@
 			<array class="NSMutableArray" key="connectionRecords">
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
+						<string key="label">button</string>
+						<reference key="source" ref="1001"/>
+						<reference key="destination" ref="722781632"/>
+					</object>
+					<int key="connectionID">18</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
 						<string key="label">view</string>
 						<reference key="source" ref="1001"/>
 						<reference key="destination" ref="1005"/>
 					</object>
-					<int key="connectionID">11</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">button</string>
-						<reference key="source" ref="1001"/>
-						<reference key="destination" ref="378080861"/>
-					</object>
-					<int key="connectionID">12</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">requestPopover:</string>
-						<reference key="source" ref="1003"/>
-						<reference key="destination" ref="514729001"/>
-					</object>
-					<int key="connectionID">18</int>
+					<int key="connectionID">19</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBActionConnection" key="connection">
 						<string key="label">removeLocator:</string>
 						<reference key="source" ref="1003"/>
-						<reference key="destination" ref="244036690"/>
+						<reference key="destination" ref="1038427270"/>
 					</object>
-					<int key="connectionID">20</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">locatorButton</string>
-						<reference key="source" ref="1005"/>
-						<reference key="destination" ref="378080861"/>
-					</object>
-					<int key="connectionID">8</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">requestPopover:</string>
-						<reference key="source" ref="1005"/>
-						<reference key="destination" ref="378080861"/>
-					</object>
-					<int key="connectionID">13</int>
+					<int key="connectionID">15</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
 						<string key="label">menu</string>
 						<reference key="source" ref="1005"/>
-						<reference key="destination" ref="770884176"/>
+						<reference key="destination" ref="19233514"/>
 					</object>
-					<int key="connectionID">19</int>
+					<int key="connectionID">22</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">requestPopover:</string>
+						<reference key="source" ref="1005"/>
+						<reference key="destination" ref="722781632"/>
+					</object>
+					<int key="connectionID">23</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">requestPopover:</string>
+						<reference key="source" ref="1005"/>
+						<reference key="destination" ref="934546761"/>
+					</object>
+					<int key="connectionID">24</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">locatorButton</string>
+						<reference key="source" ref="1005"/>
+						<reference key="destination" ref="722781632"/>
+					</object>
+					<int key="connectionID">25</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -195,41 +191,41 @@
 						<int key="objectID">1</int>
 						<reference key="object" ref="1005"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="378080861"/>
+							<reference ref="722781632"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">2</int>
-						<reference key="object" ref="378080861"/>
+						<reference key="object" ref="722781632"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="12384733"/>
+							<reference ref="585593796"/>
 						</array>
 						<reference key="parent" ref="1005"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">3</int>
-						<reference key="object" ref="12384733"/>
-						<reference key="parent" ref="378080861"/>
+						<reference key="object" ref="585593796"/>
+						<reference key="parent" ref="722781632"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">14</int>
-						<reference key="object" ref="770884176"/>
+						<int key="objectID">10</int>
+						<reference key="object" ref="19233514"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="514729001"/>
-							<reference ref="244036690"/>
+							<reference ref="934546761"/>
+							<reference ref="1038427270"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">15</int>
-						<reference key="object" ref="514729001"/>
-						<reference key="parent" ref="770884176"/>
+						<int key="objectID">11</int>
+						<reference key="object" ref="934546761"/>
+						<reference key="parent" ref="19233514"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">16</int>
-						<reference key="object" ref="244036690"/>
-						<reference key="parent" ref="770884176"/>
+						<int key="objectID">12</int>
+						<reference key="object" ref="1038427270"/>
+						<reference key="parent" ref="19233514"/>
 					</object>
 				</array>
 			</object>
@@ -238,9 +234,9 @@
 				<string key="-2.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="-3.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="1.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="14.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="15.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="16.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
+				<string key="10.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
+				<string key="11.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
+				<string key="12.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="2.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="3.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 			</dictionary>
@@ -248,27 +244,24 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">20</int>
+			<int key="maxID">25</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
 				<object class="IBPartialClassDescription">
 					<string key="className">RSLocatorView</string>
 					<string key="superclassName">NSView</string>
-					<dictionary class="NSMutableDictionary" key="actions">
-						<string key="removeLocatorButton:">id</string>
-						<string key="requestPopover:">id</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="actionInfosByName">
-						<object class="IBActionInfo" key="removeLocatorButton:">
-							<string key="name">removeLocatorButton:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="requestPopover:">
+					<object class="NSMutableDictionary" key="actions">
+						<string key="NS.key.0">requestPopover:</string>
+						<string key="NS.object.0">id</string>
+					</object>
+					<object class="NSMutableDictionary" key="actionInfosByName">
+						<string key="NS.key.0">requestPopover:</string>
+						<object class="IBActionInfo" key="NS.object.0">
 							<string key="name">requestPopover:</string>
 							<string key="candidateClassName">id</string>
 						</object>
-					</dictionary>
+					</object>
 					<object class="NSMutableDictionary" key="outlets">
 						<string key="NS.key.0">locatorButton</string>
 						<string key="NS.object.0">NSButton</string>

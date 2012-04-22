@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03943DC5153FC4BD00A4E411 /* RSLocatorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03943DC4153FC4BD00A4E411 /* RSLocatorView.xib */; };
+		03943DE015436B9000A4E411 /* WebView+RSConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 03943DDF15436B9000A4E411 /* WebView+RSConvert.m */; };
 		03975D7B15350B49000C9EA0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03975D7A15350B49000C9EA0 /* Cocoa.framework */; };
 		03975D8515350B49000C9EA0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03975D8315350B49000C9EA0 /* InfoPlist.strings */; };
 		03975D8715350B49000C9EA0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03975D8615350B49000C9EA0 /* main.m */; };
@@ -29,10 +29,12 @@
 		03A39024153A77B700915FEA /* RSLocatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A39022153A77B700915FEA /* RSLocatorViewController.m */; };
 		03A39028153B49D300915FEA /* RSLocatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A39027153B49D300915FEA /* RSLocatorView.m */; };
 		03A8FE3B153FBD8C0021B21A /* RSPopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A8FE3A153FBD8C0021B21A /* RSPopoverViewController.m */; };
+		03E3C833154467440048D8F7 /* RSLocatorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03E3C832154467440048D8F7 /* RSLocatorView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		03943DC4153FC4BD00A4E411 /* RSLocatorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RSLocatorView.xib; sourceTree = "<group>"; };
+		03943DDE15436B9000A4E411 /* WebView+RSConvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WebView+RSConvert.h"; sourceTree = "<group>"; };
+		03943DDF15436B9000A4E411 /* WebView+RSConvert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WebView+RSConvert.m"; sourceTree = "<group>"; };
 		03975D7615350B49000C9EA0 /* Trixie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trixie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03975D7A15350B49000C9EA0 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		03975D7D15350B49000C9EA0 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -73,6 +75,7 @@
 		03A39027153B49D300915FEA /* RSLocatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSLocatorView.m; sourceTree = "<group>"; };
 		03A8FE39153FBD8C0021B21A /* RSPopoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSPopoverViewController.h; sourceTree = "<group>"; };
 		03A8FE3A153FBD8C0021B21A /* RSPopoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSPopoverViewController.m; sourceTree = "<group>"; };
+		03E3C832154467440048D8F7 /* RSLocatorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RSLocatorView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +134,8 @@
 			isa = PBXGroup;
 			children = (
 				03975D8C15350B49000C9EA0 /* RSAppDelegate.h */,
+				03943DDE15436B9000A4E411 /* WebView+RSConvert.h */,
+				03943DDF15436B9000A4E411 /* WebView+RSConvert.m */,
 				03975D8D15350B49000C9EA0 /* RSAppDelegate.m */,
 				03975E481539317A000C9EA0 /* RSTrixieController.h */,
 				03975E491539317A000C9EA0 /* RSTrixieController.m */,
@@ -142,7 +147,7 @@
 				03A39022153A77B700915FEA /* RSLocatorViewController.m */,
 				03A39026153B49D300915FEA /* RSLocatorView.h */,
 				03A39027153B49D300915FEA /* RSLocatorView.m */,
-				03943DC4153FC4BD00A4E411 /* RSLocatorView.xib */,
+				03E3C832154467440048D8F7 /* RSLocatorView.xib */,
 				03A38F711539D31F00915FEA /* RSBoundingBox.h */,
 				03A38F721539D31F00915FEA /* RSBoundingBox.m */,
 				03975E6A153940E2000C9EA0 /* RSWindow.h */,
@@ -240,7 +245,7 @@
 				03975D8B15350B49000C9EA0 /* Credits.rtf in Resources */,
 				03975D9115350B49000C9EA0 /* MainMenu.xib in Resources */,
 				03975E4C1539317A000C9EA0 /* RSTrixieWindow.xib in Resources */,
-				03943DC5153FC4BD00A4E411 /* RSLocatorView.xib in Resources */,
+				03E3C833154467440048D8F7 /* RSLocatorView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +270,7 @@
 				03A39024153A77B700915FEA /* RSLocatorViewController.m in Sources */,
 				03A39028153B49D300915FEA /* RSLocatorView.m in Sources */,
 				03A8FE3B153FBD8C0021B21A /* RSPopoverViewController.m in Sources */,
+				03943DE015436B9000A4E411 /* WebView+RSConvert.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

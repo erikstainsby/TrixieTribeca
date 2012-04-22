@@ -28,7 +28,7 @@
 	id sender = [nota object];
 	id locator = nil;
 	
-	NSLog(@"%s- [%04d] %@", __PRETTY_FUNCTION__, __LINE__, [sender className]);
+	NSLog(@"%s- [%04d] requested by: %@", __PRETTY_FUNCTION__, __LINE__, [sender className]);
 	
 	if( [sender respondsToSelector:@selector(representedObject)] ) {
 		locator = [sender representedObject];
