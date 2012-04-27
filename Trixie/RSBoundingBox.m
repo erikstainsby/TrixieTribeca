@@ -46,22 +46,17 @@
 	if(_displayCoordinates) {
 		NSRect f = [self frame];
 		NSAttributedString * str = [[NSAttributedString alloc] initWithString:NSStringFromRect(f) attributes:attr];
-	
 		NSSize ss = [str size];
 		NSPoint pt = r.origin;
 		float w = ss.width;
 		pt.x = r.size.width - w;
-
 		NSRect bb = NSMakeRect(pt.x,pt.y,w,ss.height);
 		NSBezierPath * p = [NSBezierPath bezierPathWithRect:bb];
 		[[NSColor whiteColor] set];
 		CGContextFillRect(ctx, bb);
 		CGContextSetRGBStrokeColor(ctx, 0.1, 0.1, 1, 0.3);
 		[p stroke];
-		
 		[NSStringFromRect(f) drawAtPoint:pt withAttributes:attr];
-		
-		NSLog(@"%s- [%04d] %@", __PRETTY_FUNCTION__, __LINE__, NSStringFromRect(bb));
 	}
 
 	CGContextRestoreGState(ctx);

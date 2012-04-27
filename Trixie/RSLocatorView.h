@@ -7,6 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <RSTrixieFramework/RSTrixie.h>
 #import "RSWebView.h"
 
 @interface RSLocatorView : NSView
@@ -16,6 +17,8 @@
 @property (assign) NSInteger tag;
 @property (assign) NSTrackingRectTag trackingRectTag;
 
+@property (retain) IBOutlet RSTrixiePlugin * currentPlugin;
+@property (retain) IBOutlet NSView * currentPanel;
 
 - (IBAction) requestPopover:(id)sender;
 - (id)		 representedObject;

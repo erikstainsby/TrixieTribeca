@@ -8,6 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import <WebKit/WebKit.h>
+#import <SFBPopovers/SFBPopoverWindow.h>
 #import "RSWebView.h"
 
 @interface RSTrixieController : NSWindowController < NSComboBoxDataSource, NSComboBoxDelegate >

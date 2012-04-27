@@ -17,6 +17,9 @@
 @synthesize tag = _tag;
 @synthesize trackingRectTag;
 
+@synthesize currentPanel;
+@synthesize currentPlugin;
+
 - (id)		initWithFrame:(NSRect)frame
 {
     self = [super initWithFrame:frame];
@@ -24,6 +27,8 @@
         trackingRectTag = [self addTrackingRect:[self bounds] owner:self userData:nil assumeInside:NO];
 		[[self locatorButton] setTarget:self];
 		[[self locatorButton] setAction:@selector(requestPopover:)];
+		currentPanel = nil;
+		currentPlugin = nil;
     }
     return self;
 }

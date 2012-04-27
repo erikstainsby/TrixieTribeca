@@ -7,7 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import <RSTrixiePlugin/RSTrixie.h>
+#import <RSTrixieFramework/RSTrixie.h>
 #import "RSTrixieController.h"
 
 @interface RSAppDelegate : NSObject <NSApplicationDelegate>
