@@ -46,7 +46,6 @@
 		033495EB154A40C3006F004F /* ReactionSlideUp.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 033495C6154A40C3006F004F /* ReactionSlideUp.bundle */; };
 		03349633154A5B76006F004F /* SFBPopovers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03349632154A5B76006F004F /* SFBPopovers.framework */; };
 		03349635154A5BBD006F004F /* RSTrixieFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03349634154A5BBD006F004F /* RSTrixieFramework.framework */; };
-		03349637154A5BE3006F004F /* SFBPopovers.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03349636154A5BE3006F004F /* SFBPopovers.framework */; };
 		03349639154A5C0D006F004F /* RSTrixieFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03349638154A5C0D006F004F /* RSTrixieFramework.framework */; };
 		037C3DDB15447DD800FEC73C /* zepto.min.js in Sources */ = {isa = PBXBuildFile; fileRef = 037C3DDA15447DD800FEC73C /* zepto.min.js */; };
 		03943DE015436B9000A4E411 /* WebView+RSConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 03943DDF15436B9000A4E411 /* WebView+RSConvert.m */; };
@@ -70,7 +69,7 @@
 		03A39024153A77B700915FEA /* RSLocatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A39022153A77B700915FEA /* RSLocatorViewController.m */; };
 		03A39028153B49D300915FEA /* RSLocatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A39027153B49D300915FEA /* RSLocatorView.m */; };
 		03E3C833154467440048D8F7 /* RSLocatorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03E3C832154467440048D8F7 /* RSLocatorView.xib */; };
-		03E4882B1548E0BA00635BFD /* RSPopoverController.h in Headers */ = {isa = PBXBuildFile; fileRef = 03E488291548E0BA00635BFD /* RSPopoverController.h */; };
+		03E4882B1548E0BA00635BFD /* RSPopoverController.h in Headers */ = {isa = PBXBuildFile; fileRef = 03E488291548E0BA00635BFD /* RSPopoverController.h */; settings = {ATTRIBUTES = (); }; };
 		03E4882C1548E0BA00635BFD /* RSPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E4882A1548E0BA00635BFD /* RSPopoverController.m */; };
 /* End PBXBuildFile section */
 
@@ -82,7 +81,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				03349639154A5C0D006F004F /* RSTrixieFramework.framework in CopyFiles */,
-				03349637154A5BE3006F004F /* SFBPopovers.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,7 +172,6 @@
 		033495C6154A40C3006F004F /* ReactionSlideUp.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ReactionSlideUp.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		03349632154A5B76006F004F /* SFBPopovers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SFBPopovers.framework; path = ../../../Library/Frameworks/SFBPopovers.framework; sourceTree = "<group>"; };
 		03349634154A5BBD006F004F /* RSTrixieFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RSTrixieFramework.framework; path = ../../../Library/Frameworks/RSTrixieFramework.framework; sourceTree = "<group>"; };
-		03349636154A5BE3006F004F /* SFBPopovers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SFBPopovers.framework; sourceTree = "<group>"; };
 		03349638154A5C0D006F004F /* RSTrixieFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RSTrixieFramework.framework; sourceTree = "<group>"; };
 		037C3DDA15447DD800FEC73C /* zepto.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = zepto.min.js; sourceTree = "<group>"; };
 		03943DDE15436B9000A4E411 /* WebView+RSConvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WebView+RSConvert.h"; sourceTree = "<group>"; };
@@ -302,7 +299,6 @@
 			isa = PBXGroup;
 			children = (
 				03349638154A5C0D006F004F /* RSTrixieFramework.framework */,
-				03349636154A5BE3006F004F /* SFBPopovers.framework */,
 				03349634154A5BBD006F004F /* RSTrixieFramework.framework */,
 				03349632154A5B76006F004F /* SFBPopovers.framework */,
 				03975D9715350B60000C9EA0 /* WebKit.framework */,

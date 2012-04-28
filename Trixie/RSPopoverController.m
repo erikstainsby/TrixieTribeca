@@ -53,7 +53,7 @@ const CGFloat	viewMargin = 10;
 	_popoverController = [[SFBPopoverWindowController alloc] initWithWindow:popoverWindow];
 	
 	[[_popoverController popoverWindow] setBorderColor:[NSColor colorWithCalibratedWhite:0.688 alpha:0.4]];
-	[[_popoverController popoverWindow] setPopoverBackgroundColor:[NSColor colorWithCalibratedWhite:0.888 alpha:0.95]];
+	[[_popoverController popoverWindow] setPopoverBackgroundColor:[NSColor colorWithCalibratedWhite:0.888 alpha:1]];
 	[[_popoverController popoverWindow] setDistance:floorf(distance)];
 	[[_popoverController popoverWindow] setArrowWidth:floorf(arrowWidth)];
 	[[_popoverController popoverWindow] setArrowHeight:floorf(arrowHeight)];
@@ -69,22 +69,28 @@ const CGFloat	viewMargin = 10;
 	 *	 [ A | F | R ] segment control
 	 **/
 	
+	NSRect frame = locatorView.frame;
+	NSPoint pt = locatorView.centerPoint;
+	pt.x += frame.origin.x;
+	pt.y += frame.origin.y;
+	
+	//	[popoverWindow orderOut:self];
 	if(0 == [sender selectedSegment]) {
 		// show action plugin
-		
-		[popoverWindow setContentView:actionPanel];
+		currentPanel = actionPanel;
 	}
 	else if(1 == [sender selectedSegment]) {
 		// show filter plugin
-		[popoverWindow setContentView:filterPanel];
+		currentPanel = filterPanel;
 	}
 	else if(2 == [sender selectedSegment]) {
 		// show reaction plugin
-		[popoverWindow setContentView:reactionPanel];
+		currentPanel = reactionPanel;
 	}
+	[popoverWindow setContentView:currentPanel];
+	[_popoverController displayPopoverInWindow:_window atPoint:pt chooseBestLocation:YES];
 	
 }
-
 
 - (void) showPopover:(NSNotification*)nota {
 	id sender = [nota object];
@@ -111,15 +117,13 @@ const CGFloat	viewMargin = 10;
 		NSPoint where = [locatorView frame].origin;
 		where.x += [locatorView frame].size.width / 2;
 		where.y += [locatorView frame].size.height / 2;
-//		SFBPopoverPosition position = [_popoverController bestPositionInWindow:_window atPoint:where];
-//		[popoverWindow setPopoverPosition:position];
-//		[_popoverController displayPopoverInWindow:_window atPoint:where];
+
 		[_popoverController displayPopoverInWindow:_window atPoint:where chooseBestLocation:YES];
 		
 	}
 }
 
-- (void)windowDidResize:(NSNotification *)notification {
+- (void) windowDidResize:(NSNotification *)notification {
 	
     if([[_popoverController window] isVisible]) 
 	{
