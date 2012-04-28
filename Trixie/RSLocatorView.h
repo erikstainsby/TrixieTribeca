@@ -17,6 +17,7 @@
 @property (assign) NSInteger tag;
 @property (assign) NSTrackingRectTag trackingRectTag;
 
+@property (assign) NSPoint centerPoint;
 @property (retain) IBOutlet RSTrixiePlugin * currentPlugin;
 @property (retain) IBOutlet NSView * currentPanel;
 

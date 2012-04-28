@@ -17,6 +17,7 @@
 @synthesize tag = _tag;
 @synthesize trackingRectTag;
 
+@synthesize centerPoint;
 @synthesize currentPanel;
 @synthesize currentPlugin;
 
@@ -37,6 +38,8 @@
 	NSLog(@"%s- [%04d] %@", __PRETTY_FUNCTION__, __LINE__, @"");
 	[[self.menu itemWithTitle:@"Edit"] setRepresentedObject:self];
 	[[self.menu itemWithTitle:@"Delete"] setRepresentedObject:self];
+	
+	self.centerPoint = NSMakePoint(self.frame.size.width/2, self.frame.size.height/2);
 }
 
 - (IBAction) requestPopover:(id)sender {
