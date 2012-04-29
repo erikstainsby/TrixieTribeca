@@ -24,12 +24,25 @@
 	return self;
 }
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
-{
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+	
 }
 
 - (BOOL) applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender {
 	return YES;
 }
+
+- (IBAction) setActiveActionPlugin:(id)sender {
+	[[NSNotificationCenter defaultCenter] postNotificationName:RSTrixieChangeActiveActionPluginNotification object:[sender representedObject]];
+}
+- (IBAction) setActiveFilterPlugin:(id)sender {
+	[[NSNotificationCenter defaultCenter] postNotificationName:RSTrixieChangeActiveFilterPluginNotification object:[sender representedObject]];
+}
+- (IBAction) setActiveReactionPlugin:(id)sender {
+	[[NSNotificationCenter defaultCenter] postNotificationName:RSTrixieChangeActiveReactionPluginNotification object:[sender representedObject]];
+}
+
+
+
 
 @end

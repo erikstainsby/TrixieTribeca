@@ -26,6 +26,10 @@ extern NSString * const RSRemoveLocatorNotification;
 
 extern NSString * const kRSTrixieIdKeyName;
 
+extern NSString * const RSTrixieChangeActiveActionPluginNotification;
+extern NSString * const RSTrixieChangeActiveFilterPluginNotification;
+extern NSString * const RSTrixieChangeActiveReactionPluginNotification;
+
 extern int const RSLocatorStyleNone;
 extern int const RSLocatorStyleActionPending;
 extern int const RSLocatorStyleReactionPending;
@@ -33,6 +37,8 @@ extern int const RSLocatorStyleFilterPending;
 extern int const RSLocatorStyleActionComplete;
 extern int const RSLocatorStyleReactionComplete;
 extern int const RSLocatorStyleFilterComplete;
+
+
 
 static NSInteger  idnum;
 

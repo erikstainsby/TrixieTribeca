@@ -7,43 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		033495C7154A40C3006F004F /* ActionBlur.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 033495A2154A40C3006F004F /* ActionBlur.bundle */; };
-		033495C8154A40C3006F004F /* ActionClick.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 033495A3154A40C3006F004F /* ActionClick.bundle */; };
-		033495C9154A40C3006F004F /* ActionChange.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 033495A4154A40C3006F004F /* ActionChange.bundle */; };
-		033495CA154A40C3006F004F /* ActionDoubleClick.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 033495A5154A40C3006F004F /* ActionDoubleClick.bundle */; };
-		033495CB154A40C3006F004F /* ActionDrop.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 033495A6154A40C3006F004F /* ActionDrop.bundle */; };
-		033495CC154A40C3006F004F /* ActionFocus.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 033495A7154A40C3006F004F /* ActionFocus.bundle */; };
-		033495CD154A40C3006F004F /* ActionKeyDown.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 033495A8154A40C3006F004F /* ActionKeyDown.bundle */; };
-		033495CE154A40C3006F004F /* ActionKeyPress.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 033495A9154A40C3006F004F /* ActionKeyPress.bundle */; };
-		033495CF154A40C3006F004F /* ActionKeyUp.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 033495AA154A40C3006F004F /* ActionKeyUp.bundle */; };
-		033495D0154A40C3006F004F /* ActionMouseDown.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 033495AB154A40C3006F004F /* ActionMouseDown.bundle */; };
-		033495D1154A40C3006F004F /* ActionMouseOut.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 033495AC154A40C3006F004F /* ActionMouseOut.bundle */; };
-		033495D2154A40C3006F004F /* ActionMouseOver.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 033495AD154A40C3006F004F /* ActionMouseOver.bundle */; };
-		033495D3154A40C3006F004F /* ActionMouseUp.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 033495AE154A40C3006F004F /* ActionMouseUp.bundle */; };
-		033495D4154A40C3006F004F /* ActionPageLoad.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 033495AF154A40C3006F004F /* ActionPageLoad.bundle */; };
-		033495D5154A40C3006F004F /* ActionPageUnload.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 033495B0154A40C3006F004F /* ActionPageUnload.bundle */; };
-		033495D6154A40C3006F004F /* ActionResize.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 033495B1154A40C3006F004F /* ActionResize.bundle */; };
-		033495D7154A40C3006F004F /* ActionScroll.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 033495B2154A40C3006F004F /* ActionScroll.bundle */; };
-		033495D8154A40C3006F004F /* ActionSelect.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 033495B3154A40C3006F004F /* ActionSelect.bundle */; };
-		033495D9154A40C3006F004F /* ActionSubmit.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 033495B4154A40C3006F004F /* ActionSubmit.bundle */; };
-		033495DA154A40C3006F004F /* NotImplementedPlugin.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 033495B5154A40C3006F004F /* NotImplementedPlugin.bundle */; };
-		033495DB154A40C3006F004F /* FilterValue.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 033495B6154A40C3006F004F /* FilterValue.bundle */; };
-		033495DC154A40C3006F004F /* FilterClass.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 033495B7154A40C3006F004F /* FilterClass.bundle */; };
-		033495DD154A40C3006F004F /* FilterStatus.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 033495B8154A40C3006F004F /* FilterStatus.bundle */; };
-		033495DE154A40C3006F004F /* ReactionAnimate.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 033495B9154A40C3006F004F /* ReactionAnimate.bundle */; };
-		033495DF154A40C3006F004F /* ReactionClassAdd.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 033495BA154A40C3006F004F /* ReactionClassAdd.bundle */; };
-		033495E0154A40C3006F004F /* ReactionClassRemove.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 033495BB154A40C3006F004F /* ReactionClassRemove.bundle */; };
-		033495E1154A40C3006F004F /* ReactionClassToggle.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 033495BC154A40C3006F004F /* ReactionClassToggle.bundle */; };
-		033495E2154A40C3006F004F /* ReactionFadeIn.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 033495BD154A40C3006F004F /* ReactionFadeIn.bundle */; };
-		033495E3154A40C3006F004F /* ReactionFadeOut.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 033495BE154A40C3006F004F /* ReactionFadeOut.bundle */; };
-		033495E4154A40C3006F004F /* ReactionFadeTo.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 033495BF154A40C3006F004F /* ReactionFadeTo.bundle */; };
-		033495E5154A40C3006F004F /* ReactionFadeToggle.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 033495C0154A40C3006F004F /* ReactionFadeToggle.bundle */; };
-		033495E6154A40C3006F004F /* ReactionHide.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 033495C1154A40C3006F004F /* ReactionHide.bundle */; };
-		033495E7154A40C3006F004F /* ReactionShow.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 033495C2154A40C3006F004F /* ReactionShow.bundle */; };
-		033495E8154A40C3006F004F /* ReactionToggle.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 033495C3154A40C3006F004F /* ReactionToggle.bundle */; };
-		033495E9154A40C3006F004F /* ReactionSlideDown.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 033495C4154A40C3006F004F /* ReactionSlideDown.bundle */; };
-		033495EA154A40C3006F004F /* ReactionSlideToggle.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 033495C5154A40C3006F004F /* ReactionSlideToggle.bundle */; };
-		033495EB154A40C3006F004F /* ReactionSlideUp.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 033495C6154A40C3006F004F /* ReactionSlideUp.bundle */; };
 		03349633154A5B76006F004F /* SFBPopovers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03349632154A5B76006F004F /* SFBPopovers.framework */; };
 		03349635154A5BBD006F004F /* RSTrixieFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03349634154A5BBD006F004F /* RSTrixieFramework.framework */; };
 		03349639154A5C0D006F004F /* RSTrixieFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03349638154A5C0D006F004F /* RSTrixieFramework.framework */; };
@@ -68,6 +31,43 @@
 		03A38F731539D31F00915FEA /* RSBoundingBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A38F721539D31F00915FEA /* RSBoundingBox.m */; };
 		03A39024153A77B700915FEA /* RSLocatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A39022153A77B700915FEA /* RSLocatorViewController.m */; };
 		03A39028153B49D300915FEA /* RSLocatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A39027153B49D300915FEA /* RSLocatorView.m */; };
+		03C106C8154CBC4600E82A70 /* ActionBlur.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03C106A3154CBC4400E82A70 /* ActionBlur.bundle */; };
+		03C106C9154CBC4600E82A70 /* ActionChange.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03C106A4154CBC4400E82A70 /* ActionChange.bundle */; };
+		03C106CA154CBC4600E82A70 /* ActionClick.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03C106A5154CBC4400E82A70 /* ActionClick.bundle */; };
+		03C106CB154CBC4600E82A70 /* ActionDoubleClick.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03C106A6154CBC4400E82A70 /* ActionDoubleClick.bundle */; };
+		03C106CC154CBC4600E82A70 /* ActionDrop.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03C106A7154CBC4400E82A70 /* ActionDrop.bundle */; };
+		03C106CD154CBC4600E82A70 /* ActionFocus.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03C106A8154CBC4400E82A70 /* ActionFocus.bundle */; };
+		03C106CE154CBC4600E82A70 /* ActionKeyDown.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03C106A9154CBC4500E82A70 /* ActionKeyDown.bundle */; };
+		03C106CF154CBC4600E82A70 /* ActionKeyPress.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03C106AA154CBC4500E82A70 /* ActionKeyPress.bundle */; };
+		03C106D0154CBC4600E82A70 /* ActionKeyUp.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03C106AB154CBC4500E82A70 /* ActionKeyUp.bundle */; };
+		03C106D1154CBC4600E82A70 /* ActionMouseDown.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03C106AC154CBC4500E82A70 /* ActionMouseDown.bundle */; };
+		03C106D2154CBC4600E82A70 /* ActionMouseOut.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03C106AD154CBC4500E82A70 /* ActionMouseOut.bundle */; };
+		03C106D3154CBC4600E82A70 /* ActionMouseOver.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03C106AE154CBC4500E82A70 /* ActionMouseOver.bundle */; };
+		03C106D4154CBC4600E82A70 /* ActionMouseUp.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03C106AF154CBC4500E82A70 /* ActionMouseUp.bundle */; };
+		03C106D5154CBC4600E82A70 /* ActionPageLoad.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03C106B0154CBC4500E82A70 /* ActionPageLoad.bundle */; };
+		03C106D6154CBC4600E82A70 /* ActionPageUnload.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03C106B1154CBC4500E82A70 /* ActionPageUnload.bundle */; };
+		03C106D7154CBC4600E82A70 /* ActionResize.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03C106B2154CBC4500E82A70 /* ActionResize.bundle */; };
+		03C106D8154CBC4600E82A70 /* ActionScroll.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03C106B3154CBC4500E82A70 /* ActionScroll.bundle */; };
+		03C106D9154CBC4600E82A70 /* ActionSelect.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03C106B4154CBC4500E82A70 /* ActionSelect.bundle */; };
+		03C106DA154CBC4600E82A70 /* ActionSubmit.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03C106B5154CBC4500E82A70 /* ActionSubmit.bundle */; };
+		03C106DB154CBC4600E82A70 /* FilterClass.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03C106B6154CBC4500E82A70 /* FilterClass.bundle */; };
+		03C106DC154CBC4600E82A70 /* FilterStatus.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03C106B7154CBC4500E82A70 /* FilterStatus.bundle */; };
+		03C106DD154CBC4600E82A70 /* FilterValue.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03C106B8154CBC4500E82A70 /* FilterValue.bundle */; };
+		03C106DE154CBC4600E82A70 /* NotImplementedPlugin.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03C106B9154CBC4500E82A70 /* NotImplementedPlugin.bundle */; };
+		03C106DF154CBC4600E82A70 /* ReactionAnimate.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03C106BA154CBC4500E82A70 /* ReactionAnimate.bundle */; };
+		03C106E0154CBC4600E82A70 /* ReactionClassAdd.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03C106BB154CBC4500E82A70 /* ReactionClassAdd.bundle */; };
+		03C106E1154CBC4600E82A70 /* ReactionClassRemove.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03C106BC154CBC4500E82A70 /* ReactionClassRemove.bundle */; };
+		03C106E2154CBC4600E82A70 /* ReactionClassToggle.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03C106BD154CBC4500E82A70 /* ReactionClassToggle.bundle */; };
+		03C106E3154CBC4600E82A70 /* ReactionFadeIn.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03C106BE154CBC4500E82A70 /* ReactionFadeIn.bundle */; };
+		03C106E4154CBC4600E82A70 /* ReactionFadeOut.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03C106BF154CBC4500E82A70 /* ReactionFadeOut.bundle */; };
+		03C106E5154CBC4600E82A70 /* ReactionFadeTo.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03C106C0154CBC4500E82A70 /* ReactionFadeTo.bundle */; };
+		03C106E6154CBC4600E82A70 /* ReactionFadeToggle.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03C106C1154CBC4500E82A70 /* ReactionFadeToggle.bundle */; };
+		03C106E7154CBC4600E82A70 /* ReactionHide.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03C106C2154CBC4500E82A70 /* ReactionHide.bundle */; };
+		03C106E8154CBC4600E82A70 /* ReactionShow.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03C106C3154CBC4500E82A70 /* ReactionShow.bundle */; };
+		03C106E9154CBC4600E82A70 /* ReactionSlideDown.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03C106C4154CBC4500E82A70 /* ReactionSlideDown.bundle */; };
+		03C106EA154CBC4600E82A70 /* ReactionSlideToggle.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03C106C5154CBC4500E82A70 /* ReactionSlideToggle.bundle */; };
+		03C106EB154CBC4600E82A70 /* ReactionSlideUp.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03C106C6154CBC4600E82A70 /* ReactionSlideUp.bundle */; };
+		03C106EC154CBC4600E82A70 /* ReactionToggle.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03C106C7154CBC4600E82A70 /* ReactionToggle.bundle */; };
 		03E3C833154467440048D8F7 /* RSLocatorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03E3C832154467440048D8F7 /* RSLocatorView.xib */; };
 		03E4882B1548E0BA00635BFD /* RSPopoverController.h in Headers */ = {isa = PBXBuildFile; fileRef = 03E488291548E0BA00635BFD /* RSPopoverController.h */; settings = {ATTRIBUTES = (); }; };
 		03E4882C1548E0BA00635BFD /* RSPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E4882A1548E0BA00635BFD /* RSPopoverController.m */; };
@@ -90,86 +90,49 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				033495C7154A40C3006F004F /* ActionBlur.bundle in CopyFiles */,
-				033495C8154A40C3006F004F /* ActionClick.bundle in CopyFiles */,
-				033495C9154A40C3006F004F /* ActionChange.bundle in CopyFiles */,
-				033495CA154A40C3006F004F /* ActionDoubleClick.bundle in CopyFiles */,
-				033495CB154A40C3006F004F /* ActionDrop.bundle in CopyFiles */,
-				033495CC154A40C3006F004F /* ActionFocus.bundle in CopyFiles */,
-				033495CD154A40C3006F004F /* ActionKeyDown.bundle in CopyFiles */,
-				033495CE154A40C3006F004F /* ActionKeyPress.bundle in CopyFiles */,
-				033495CF154A40C3006F004F /* ActionKeyUp.bundle in CopyFiles */,
-				033495D0154A40C3006F004F /* ActionMouseDown.bundle in CopyFiles */,
-				033495D1154A40C3006F004F /* ActionMouseOut.bundle in CopyFiles */,
-				033495D2154A40C3006F004F /* ActionMouseOver.bundle in CopyFiles */,
-				033495D3154A40C3006F004F /* ActionMouseUp.bundle in CopyFiles */,
-				033495D4154A40C3006F004F /* ActionPageLoad.bundle in CopyFiles */,
-				033495D5154A40C3006F004F /* ActionPageUnload.bundle in CopyFiles */,
-				033495D6154A40C3006F004F /* ActionResize.bundle in CopyFiles */,
-				033495D7154A40C3006F004F /* ActionScroll.bundle in CopyFiles */,
-				033495D8154A40C3006F004F /* ActionSelect.bundle in CopyFiles */,
-				033495D9154A40C3006F004F /* ActionSubmit.bundle in CopyFiles */,
-				033495DA154A40C3006F004F /* NotImplementedPlugin.bundle in CopyFiles */,
-				033495DB154A40C3006F004F /* FilterValue.bundle in CopyFiles */,
-				033495DC154A40C3006F004F /* FilterClass.bundle in CopyFiles */,
-				033495DD154A40C3006F004F /* FilterStatus.bundle in CopyFiles */,
-				033495DE154A40C3006F004F /* ReactionAnimate.bundle in CopyFiles */,
-				033495DF154A40C3006F004F /* ReactionClassAdd.bundle in CopyFiles */,
-				033495E0154A40C3006F004F /* ReactionClassRemove.bundle in CopyFiles */,
-				033495E1154A40C3006F004F /* ReactionClassToggle.bundle in CopyFiles */,
-				033495E2154A40C3006F004F /* ReactionFadeIn.bundle in CopyFiles */,
-				033495E3154A40C3006F004F /* ReactionFadeOut.bundle in CopyFiles */,
-				033495E4154A40C3006F004F /* ReactionFadeTo.bundle in CopyFiles */,
-				033495E5154A40C3006F004F /* ReactionFadeToggle.bundle in CopyFiles */,
-				033495E6154A40C3006F004F /* ReactionHide.bundle in CopyFiles */,
-				033495E7154A40C3006F004F /* ReactionShow.bundle in CopyFiles */,
-				033495E8154A40C3006F004F /* ReactionToggle.bundle in CopyFiles */,
-				033495E9154A40C3006F004F /* ReactionSlideDown.bundle in CopyFiles */,
-				033495EA154A40C3006F004F /* ReactionSlideToggle.bundle in CopyFiles */,
-				033495EB154A40C3006F004F /* ReactionSlideUp.bundle in CopyFiles */,
+				03C106C8154CBC4600E82A70 /* ActionBlur.bundle in CopyFiles */,
+				03C106C9154CBC4600E82A70 /* ActionChange.bundle in CopyFiles */,
+				03C106CA154CBC4600E82A70 /* ActionClick.bundle in CopyFiles */,
+				03C106CB154CBC4600E82A70 /* ActionDoubleClick.bundle in CopyFiles */,
+				03C106CC154CBC4600E82A70 /* ActionDrop.bundle in CopyFiles */,
+				03C106CD154CBC4600E82A70 /* ActionFocus.bundle in CopyFiles */,
+				03C106CE154CBC4600E82A70 /* ActionKeyDown.bundle in CopyFiles */,
+				03C106CF154CBC4600E82A70 /* ActionKeyPress.bundle in CopyFiles */,
+				03C106D0154CBC4600E82A70 /* ActionKeyUp.bundle in CopyFiles */,
+				03C106D1154CBC4600E82A70 /* ActionMouseDown.bundle in CopyFiles */,
+				03C106D2154CBC4600E82A70 /* ActionMouseOut.bundle in CopyFiles */,
+				03C106D3154CBC4600E82A70 /* ActionMouseOver.bundle in CopyFiles */,
+				03C106D4154CBC4600E82A70 /* ActionMouseUp.bundle in CopyFiles */,
+				03C106D5154CBC4600E82A70 /* ActionPageLoad.bundle in CopyFiles */,
+				03C106D6154CBC4600E82A70 /* ActionPageUnload.bundle in CopyFiles */,
+				03C106D7154CBC4600E82A70 /* ActionResize.bundle in CopyFiles */,
+				03C106D8154CBC4600E82A70 /* ActionScroll.bundle in CopyFiles */,
+				03C106D9154CBC4600E82A70 /* ActionSelect.bundle in CopyFiles */,
+				03C106DA154CBC4600E82A70 /* ActionSubmit.bundle in CopyFiles */,
+				03C106DB154CBC4600E82A70 /* FilterClass.bundle in CopyFiles */,
+				03C106DC154CBC4600E82A70 /* FilterStatus.bundle in CopyFiles */,
+				03C106DD154CBC4600E82A70 /* FilterValue.bundle in CopyFiles */,
+				03C106DE154CBC4600E82A70 /* NotImplementedPlugin.bundle in CopyFiles */,
+				03C106DF154CBC4600E82A70 /* ReactionAnimate.bundle in CopyFiles */,
+				03C106E0154CBC4600E82A70 /* ReactionClassAdd.bundle in CopyFiles */,
+				03C106E1154CBC4600E82A70 /* ReactionClassRemove.bundle in CopyFiles */,
+				03C106E2154CBC4600E82A70 /* ReactionClassToggle.bundle in CopyFiles */,
+				03C106E3154CBC4600E82A70 /* ReactionFadeIn.bundle in CopyFiles */,
+				03C106E4154CBC4600E82A70 /* ReactionFadeOut.bundle in CopyFiles */,
+				03C106E5154CBC4600E82A70 /* ReactionFadeTo.bundle in CopyFiles */,
+				03C106E6154CBC4600E82A70 /* ReactionFadeToggle.bundle in CopyFiles */,
+				03C106E7154CBC4600E82A70 /* ReactionHide.bundle in CopyFiles */,
+				03C106E8154CBC4600E82A70 /* ReactionShow.bundle in CopyFiles */,
+				03C106E9154CBC4600E82A70 /* ReactionSlideDown.bundle in CopyFiles */,
+				03C106EA154CBC4600E82A70 /* ReactionSlideToggle.bundle in CopyFiles */,
+				03C106EB154CBC4600E82A70 /* ReactionSlideUp.bundle in CopyFiles */,
+				03C106EC154CBC4600E82A70 /* ReactionToggle.bundle in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		033495A2154A40C3006F004F /* ActionBlur.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ActionBlur.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		033495A3154A40C3006F004F /* ActionClick.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ActionClick.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		033495A4154A40C3006F004F /* ActionChange.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ActionChange.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		033495A5154A40C3006F004F /* ActionDoubleClick.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ActionDoubleClick.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		033495A6154A40C3006F004F /* ActionDrop.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ActionDrop.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		033495A7154A40C3006F004F /* ActionFocus.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ActionFocus.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		033495A8154A40C3006F004F /* ActionKeyDown.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ActionKeyDown.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		033495A9154A40C3006F004F /* ActionKeyPress.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ActionKeyPress.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		033495AA154A40C3006F004F /* ActionKeyUp.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ActionKeyUp.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		033495AB154A40C3006F004F /* ActionMouseDown.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ActionMouseDown.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		033495AC154A40C3006F004F /* ActionMouseOut.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ActionMouseOut.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		033495AD154A40C3006F004F /* ActionMouseOver.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ActionMouseOver.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		033495AE154A40C3006F004F /* ActionMouseUp.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ActionMouseUp.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		033495AF154A40C3006F004F /* ActionPageLoad.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ActionPageLoad.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		033495B0154A40C3006F004F /* ActionPageUnload.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ActionPageUnload.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		033495B1154A40C3006F004F /* ActionResize.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ActionResize.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		033495B2154A40C3006F004F /* ActionScroll.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ActionScroll.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		033495B3154A40C3006F004F /* ActionSelect.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ActionSelect.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		033495B4154A40C3006F004F /* ActionSubmit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ActionSubmit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		033495B5154A40C3006F004F /* NotImplementedPlugin.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = NotImplementedPlugin.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		033495B6154A40C3006F004F /* FilterValue.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = FilterValue.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		033495B7154A40C3006F004F /* FilterClass.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = FilterClass.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		033495B8154A40C3006F004F /* FilterStatus.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = FilterStatus.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		033495B9154A40C3006F004F /* ReactionAnimate.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ReactionAnimate.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		033495BA154A40C3006F004F /* ReactionClassAdd.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ReactionClassAdd.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		033495BB154A40C3006F004F /* ReactionClassRemove.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ReactionClassRemove.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		033495BC154A40C3006F004F /* ReactionClassToggle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ReactionClassToggle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		033495BD154A40C3006F004F /* ReactionFadeIn.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ReactionFadeIn.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		033495BE154A40C3006F004F /* ReactionFadeOut.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ReactionFadeOut.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		033495BF154A40C3006F004F /* ReactionFadeTo.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ReactionFadeTo.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		033495C0154A40C3006F004F /* ReactionFadeToggle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ReactionFadeToggle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		033495C1154A40C3006F004F /* ReactionHide.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ReactionHide.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		033495C2154A40C3006F004F /* ReactionShow.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ReactionShow.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		033495C3154A40C3006F004F /* ReactionToggle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ReactionToggle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		033495C4154A40C3006F004F /* ReactionSlideDown.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ReactionSlideDown.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		033495C5154A40C3006F004F /* ReactionSlideToggle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ReactionSlideToggle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		033495C6154A40C3006F004F /* ReactionSlideUp.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ReactionSlideUp.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		03349632154A5B76006F004F /* SFBPopovers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SFBPopovers.framework; path = ../../../Library/Frameworks/SFBPopovers.framework; sourceTree = "<group>"; };
 		03349634154A5BBD006F004F /* RSTrixieFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RSTrixieFramework.framework; path = ../../../Library/Frameworks/RSTrixieFramework.framework; sourceTree = "<group>"; };
 		03349638154A5C0D006F004F /* RSTrixieFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RSTrixieFramework.framework; sourceTree = "<group>"; };
@@ -213,6 +176,43 @@
 		03A39022153A77B700915FEA /* RSLocatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSLocatorViewController.m; sourceTree = "<group>"; };
 		03A39026153B49D300915FEA /* RSLocatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSLocatorView.h; sourceTree = "<group>"; };
 		03A39027153B49D300915FEA /* RSLocatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSLocatorView.m; sourceTree = "<group>"; };
+		03C106A3154CBC4400E82A70 /* ActionBlur.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ActionBlur.bundle; sourceTree = "<group>"; };
+		03C106A4154CBC4400E82A70 /* ActionChange.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ActionChange.bundle; sourceTree = "<group>"; };
+		03C106A5154CBC4400E82A70 /* ActionClick.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ActionClick.bundle; sourceTree = "<group>"; };
+		03C106A6154CBC4400E82A70 /* ActionDoubleClick.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ActionDoubleClick.bundle; sourceTree = "<group>"; };
+		03C106A7154CBC4400E82A70 /* ActionDrop.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ActionDrop.bundle; sourceTree = "<group>"; };
+		03C106A8154CBC4400E82A70 /* ActionFocus.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ActionFocus.bundle; sourceTree = "<group>"; };
+		03C106A9154CBC4500E82A70 /* ActionKeyDown.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ActionKeyDown.bundle; sourceTree = "<group>"; };
+		03C106AA154CBC4500E82A70 /* ActionKeyPress.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ActionKeyPress.bundle; sourceTree = "<group>"; };
+		03C106AB154CBC4500E82A70 /* ActionKeyUp.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ActionKeyUp.bundle; sourceTree = "<group>"; };
+		03C106AC154CBC4500E82A70 /* ActionMouseDown.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ActionMouseDown.bundle; sourceTree = "<group>"; };
+		03C106AD154CBC4500E82A70 /* ActionMouseOut.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ActionMouseOut.bundle; sourceTree = "<group>"; };
+		03C106AE154CBC4500E82A70 /* ActionMouseOver.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ActionMouseOver.bundle; sourceTree = "<group>"; };
+		03C106AF154CBC4500E82A70 /* ActionMouseUp.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ActionMouseUp.bundle; sourceTree = "<group>"; };
+		03C106B0154CBC4500E82A70 /* ActionPageLoad.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ActionPageLoad.bundle; sourceTree = "<group>"; };
+		03C106B1154CBC4500E82A70 /* ActionPageUnload.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ActionPageUnload.bundle; sourceTree = "<group>"; };
+		03C106B2154CBC4500E82A70 /* ActionResize.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ActionResize.bundle; sourceTree = "<group>"; };
+		03C106B3154CBC4500E82A70 /* ActionScroll.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ActionScroll.bundle; sourceTree = "<group>"; };
+		03C106B4154CBC4500E82A70 /* ActionSelect.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ActionSelect.bundle; sourceTree = "<group>"; };
+		03C106B5154CBC4500E82A70 /* ActionSubmit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ActionSubmit.bundle; sourceTree = "<group>"; };
+		03C106B6154CBC4500E82A70 /* FilterClass.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FilterClass.bundle; sourceTree = "<group>"; };
+		03C106B7154CBC4500E82A70 /* FilterStatus.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FilterStatus.bundle; sourceTree = "<group>"; };
+		03C106B8154CBC4500E82A70 /* FilterValue.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FilterValue.bundle; sourceTree = "<group>"; };
+		03C106B9154CBC4500E82A70 /* NotImplementedPlugin.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = NotImplementedPlugin.bundle; sourceTree = "<group>"; };
+		03C106BA154CBC4500E82A70 /* ReactionAnimate.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ReactionAnimate.bundle; sourceTree = "<group>"; };
+		03C106BB154CBC4500E82A70 /* ReactionClassAdd.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ReactionClassAdd.bundle; sourceTree = "<group>"; };
+		03C106BC154CBC4500E82A70 /* ReactionClassRemove.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ReactionClassRemove.bundle; sourceTree = "<group>"; };
+		03C106BD154CBC4500E82A70 /* ReactionClassToggle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ReactionClassToggle.bundle; sourceTree = "<group>"; };
+		03C106BE154CBC4500E82A70 /* ReactionFadeIn.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ReactionFadeIn.bundle; sourceTree = "<group>"; };
+		03C106BF154CBC4500E82A70 /* ReactionFadeOut.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ReactionFadeOut.bundle; sourceTree = "<group>"; };
+		03C106C0154CBC4500E82A70 /* ReactionFadeTo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ReactionFadeTo.bundle; sourceTree = "<group>"; };
+		03C106C1154CBC4500E82A70 /* ReactionFadeToggle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ReactionFadeToggle.bundle; sourceTree = "<group>"; };
+		03C106C2154CBC4500E82A70 /* ReactionHide.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ReactionHide.bundle; sourceTree = "<group>"; };
+		03C106C3154CBC4500E82A70 /* ReactionShow.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ReactionShow.bundle; sourceTree = "<group>"; };
+		03C106C4154CBC4500E82A70 /* ReactionSlideDown.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ReactionSlideDown.bundle; sourceTree = "<group>"; };
+		03C106C5154CBC4500E82A70 /* ReactionSlideToggle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ReactionSlideToggle.bundle; sourceTree = "<group>"; };
+		03C106C6154CBC4600E82A70 /* ReactionSlideUp.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ReactionSlideUp.bundle; sourceTree = "<group>"; };
+		03C106C7154CBC4600E82A70 /* ReactionToggle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ReactionToggle.bundle; sourceTree = "<group>"; };
 		03E3C832154467440048D8F7 /* RSLocatorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RSLocatorView.xib; sourceTree = "<group>"; };
 		03E488291548E0BA00635BFD /* RSPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSPopoverController.h; sourceTree = "<group>"; };
 		03E4882A1548E0BA00635BFD /* RSPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSPopoverController.m; sourceTree = "<group>"; };
@@ -236,43 +236,43 @@
 		033495EC154A40D0006F004F /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				033495A2154A40C3006F004F /* ActionBlur.bundle */,
-				033495A3154A40C3006F004F /* ActionClick.bundle */,
-				033495A4154A40C3006F004F /* ActionChange.bundle */,
-				033495A5154A40C3006F004F /* ActionDoubleClick.bundle */,
-				033495A6154A40C3006F004F /* ActionDrop.bundle */,
-				033495A7154A40C3006F004F /* ActionFocus.bundle */,
-				033495A8154A40C3006F004F /* ActionKeyDown.bundle */,
-				033495A9154A40C3006F004F /* ActionKeyPress.bundle */,
-				033495AA154A40C3006F004F /* ActionKeyUp.bundle */,
-				033495AB154A40C3006F004F /* ActionMouseDown.bundle */,
-				033495AC154A40C3006F004F /* ActionMouseOut.bundle */,
-				033495AD154A40C3006F004F /* ActionMouseOver.bundle */,
-				033495AE154A40C3006F004F /* ActionMouseUp.bundle */,
-				033495AF154A40C3006F004F /* ActionPageLoad.bundle */,
-				033495B0154A40C3006F004F /* ActionPageUnload.bundle */,
-				033495B1154A40C3006F004F /* ActionResize.bundle */,
-				033495B2154A40C3006F004F /* ActionScroll.bundle */,
-				033495B3154A40C3006F004F /* ActionSelect.bundle */,
-				033495B4154A40C3006F004F /* ActionSubmit.bundle */,
-				033495B5154A40C3006F004F /* NotImplementedPlugin.bundle */,
-				033495B6154A40C3006F004F /* FilterValue.bundle */,
-				033495B7154A40C3006F004F /* FilterClass.bundle */,
-				033495B8154A40C3006F004F /* FilterStatus.bundle */,
-				033495B9154A40C3006F004F /* ReactionAnimate.bundle */,
-				033495BA154A40C3006F004F /* ReactionClassAdd.bundle */,
-				033495BB154A40C3006F004F /* ReactionClassRemove.bundle */,
-				033495BC154A40C3006F004F /* ReactionClassToggle.bundle */,
-				033495BD154A40C3006F004F /* ReactionFadeIn.bundle */,
-				033495BE154A40C3006F004F /* ReactionFadeOut.bundle */,
-				033495BF154A40C3006F004F /* ReactionFadeTo.bundle */,
-				033495C0154A40C3006F004F /* ReactionFadeToggle.bundle */,
-				033495C1154A40C3006F004F /* ReactionHide.bundle */,
-				033495C2154A40C3006F004F /* ReactionShow.bundle */,
-				033495C3154A40C3006F004F /* ReactionToggle.bundle */,
-				033495C4154A40C3006F004F /* ReactionSlideDown.bundle */,
-				033495C5154A40C3006F004F /* ReactionSlideToggle.bundle */,
-				033495C6154A40C3006F004F /* ReactionSlideUp.bundle */,
+				03C106A3154CBC4400E82A70 /* ActionBlur.bundle */,
+				03C106A4154CBC4400E82A70 /* ActionChange.bundle */,
+				03C106A5154CBC4400E82A70 /* ActionClick.bundle */,
+				03C106A6154CBC4400E82A70 /* ActionDoubleClick.bundle */,
+				03C106A7154CBC4400E82A70 /* ActionDrop.bundle */,
+				03C106A8154CBC4400E82A70 /* ActionFocus.bundle */,
+				03C106A9154CBC4500E82A70 /* ActionKeyDown.bundle */,
+				03C106AA154CBC4500E82A70 /* ActionKeyPress.bundle */,
+				03C106AB154CBC4500E82A70 /* ActionKeyUp.bundle */,
+				03C106AC154CBC4500E82A70 /* ActionMouseDown.bundle */,
+				03C106AD154CBC4500E82A70 /* ActionMouseOut.bundle */,
+				03C106AE154CBC4500E82A70 /* ActionMouseOver.bundle */,
+				03C106AF154CBC4500E82A70 /* ActionMouseUp.bundle */,
+				03C106B0154CBC4500E82A70 /* ActionPageLoad.bundle */,
+				03C106B1154CBC4500E82A70 /* ActionPageUnload.bundle */,
+				03C106B2154CBC4500E82A70 /* ActionResize.bundle */,
+				03C106B3154CBC4500E82A70 /* ActionScroll.bundle */,
+				03C106B4154CBC4500E82A70 /* ActionSelect.bundle */,
+				03C106B5154CBC4500E82A70 /* ActionSubmit.bundle */,
+				03C106B6154CBC4500E82A70 /* FilterClass.bundle */,
+				03C106B7154CBC4500E82A70 /* FilterStatus.bundle */,
+				03C106B8154CBC4500E82A70 /* FilterValue.bundle */,
+				03C106B9154CBC4500E82A70 /* NotImplementedPlugin.bundle */,
+				03C106BA154CBC4500E82A70 /* ReactionAnimate.bundle */,
+				03C106BB154CBC4500E82A70 /* ReactionClassAdd.bundle */,
+				03C106BC154CBC4500E82A70 /* ReactionClassRemove.bundle */,
+				03C106BD154CBC4500E82A70 /* ReactionClassToggle.bundle */,
+				03C106BE154CBC4500E82A70 /* ReactionFadeIn.bundle */,
+				03C106BF154CBC4500E82A70 /* ReactionFadeOut.bundle */,
+				03C106C0154CBC4500E82A70 /* ReactionFadeTo.bundle */,
+				03C106C1154CBC4500E82A70 /* ReactionFadeToggle.bundle */,
+				03C106C2154CBC4500E82A70 /* ReactionHide.bundle */,
+				03C106C3154CBC4500E82A70 /* ReactionShow.bundle */,
+				03C106C4154CBC4500E82A70 /* ReactionSlideDown.bundle */,
+				03C106C5154CBC4500E82A70 /* ReactionSlideToggle.bundle */,
+				03C106C6154CBC4600E82A70 /* ReactionSlideUp.bundle */,
+				03C106C7154CBC4600E82A70 /* ReactionToggle.bundle */,
 			);
 			name = Plugins;
 			sourceTree = "<group>";

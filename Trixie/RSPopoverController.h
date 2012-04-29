@@ -7,9 +7,11 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <RSTrixieFramework/RSTrixie.h>
 #import <SFBPopovers/SFBPopoverWindow.h>
 #import <SFBPopovers/SFBPopoverWindowController.h>
 #import "RSLocatorView.h"
+
 
 @interface RSPopoverController : NSViewController
 {
@@ -33,7 +35,19 @@
 @property (retain) IBOutlet NSView * filterPanel;
 @property (retain) IBOutlet NSView * reactionPanel;
 
+@property (retain) IBOutlet NSPopUpButton * actionMenu;
+@property (retain) IBOutlet NSPopUpButton * filterMenu;
+@property (retain) IBOutlet NSPopUpButton * reactionMenu;
 
+@property (retain) IBOutlet NSArray * actionPlugins;
+@property (retain) IBOutlet NSArray * filterPlugins;
+@property (retain) IBOutlet NSArray * reactionPlugins;
+
+
+- (IBAction) swapPluginPanel:(id)sender;
 - (void) showPopover:(NSNotification*)nota;
+- (void) changeActiveActionPlugin:(NSNotification*)nota;
+- (void) changeActiveFilterPlugin:(NSNotification*)nota;
+- (void) changeActiveReactionPlugin:(NSNotification*)nota;
 
 @end

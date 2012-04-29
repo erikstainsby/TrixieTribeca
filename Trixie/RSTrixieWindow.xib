@@ -947,7 +947,7 @@
 			</object>
 			<object class="NSWindowTemplate" id="740938791">
 				<int key="NSWindowBacking">2</int>
-				<string key="NSWindowRect">{{283, 305}, {378, 513}}</string>
+				<string key="NSWindowRect">{{283, 305}, {328, 391}}</string>
 				<int key="NSWTFlags">-193457152</int>
 				<string key="NSWindowTitle">Window</string>
 				<string key="NSWindowClass">SFBPopoverWindow</string>
@@ -956,7 +956,7 @@
 				<object class="NSView" key="NSWindowView" id="932866664">
 					<reference key="NSNextResponder"/>
 					<int key="NSvFlags">256</int>
-					<string key="NSFrameSize">{378, 513}</string>
+					<string key="NSFrameSize">{328, 391}</string>
 					<reference key="NSSuperview"/>
 					<reference key="NSWindow"/>
 					<string key="NSReuseIdentifierKey">_NS:20</string>
@@ -1000,6 +1000,30 @@
 						<reference key="destination" ref="736990890"/>
 					</object>
 					<int key="connectionID">20</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">swapPluginPanel:</string>
+						<reference key="source" ref="1003"/>
+						<reference key="destination" ref="907023430"/>
+					</object>
+					<int key="connectionID">208</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">swapPluginPanel:</string>
+						<reference key="source" ref="1003"/>
+						<reference key="destination" ref="290545825"/>
+					</object>
+					<int key="connectionID">209</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">swapPluginPanel:</string>
+						<reference key="source" ref="1003"/>
+						<reference key="destination" ref="602797692"/>
+					</object>
+					<int key="connectionID">210</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
@@ -1082,36 +1106,36 @@
 					<int key="connectionID">197</int>
 				</object>
 				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">swapPlugin:</string>
-						<reference key="source" ref="528383652"/>
-						<reference key="destination" ref="907023430"/>
-					</object>
-					<int key="connectionID">198</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">swapPlugin:</string>
-						<reference key="source" ref="528383652"/>
-						<reference key="destination" ref="290545825"/>
-					</object>
-					<int key="connectionID">199</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">swapPlugin:</string>
-						<reference key="source" ref="528383652"/>
-						<reference key="destination" ref="602797692"/>
-					</object>
-					<int key="connectionID">200</int>
-				</object>
-				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
 						<string key="label">window</string>
 						<reference key="source" ref="528383652"/>
 						<reference key="destination" ref="1005"/>
 					</object>
 					<int key="connectionID">201</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">actionMenu</string>
+						<reference key="source" ref="528383652"/>
+						<reference key="destination" ref="697508570"/>
+					</object>
+					<int key="connectionID">205</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">filterMenu</string>
+						<reference key="source" ref="528383652"/>
+						<reference key="destination" ref="873814331"/>
+					</object>
+					<int key="connectionID">206</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">reactionMenu</string>
+						<reference key="source" ref="528383652"/>
+						<reference key="destination" ref="877910505"/>
+					</object>
+					<int key="connectionID">207</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -1581,7 +1605,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">204</int>
+			<int key="maxID">210</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -1680,22 +1704,43 @@
 				<object class="IBPartialClassDescription">
 					<string key="className">RSPopoverController</string>
 					<string key="superclassName">NSViewController</string>
+					<object class="NSMutableDictionary" key="actions">
+						<string key="NS.key.0">swapPluginPanel:</string>
+						<string key="NS.object.0">id</string>
+					</object>
+					<object class="NSMutableDictionary" key="actionInfosByName">
+						<string key="NS.key.0">swapPluginPanel:</string>
+						<object class="IBActionInfo" key="NS.object.0">
+							<string key="name">swapPluginPanel:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</object>
 					<dictionary class="NSMutableDictionary" key="outlets">
+						<string key="actionMenu">NSPopUpButton</string>
 						<string key="actionPanel">NSView</string>
 						<string key="actionPlugin">RSActionPlugin</string>
+						<string key="actionPlugins">NSArray</string>
 						<string key="borderColor">NSColor</string>
 						<string key="currentPanel">NSView</string>
 						<string key="currentPlugin">RSTrixiePlugin</string>
+						<string key="filterMenu">NSPopUpButton</string>
 						<string key="filterPanel">NSView</string>
 						<string key="filterPlugin">RSFilterPlugin</string>
+						<string key="filterPlugins">NSArray</string>
 						<string key="locatorView">RSLocatorView</string>
 						<string key="popoverBackgroundColor">NSColor</string>
 						<string key="popoverWindow">SFBPopoverWindow</string>
+						<string key="reactionMenu">NSPopUpButton</string>
 						<string key="reactionPanel">NSView</string>
 						<string key="reactionPlugin">RSReactionPlugin</string>
+						<string key="reactionPlugins">NSArray</string>
 						<string key="window">NSWindow</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<object class="IBToOneOutletInfo" key="actionMenu">
+							<string key="name">actionMenu</string>
+							<string key="candidateClassName">NSPopUpButton</string>
+						</object>
 						<object class="IBToOneOutletInfo" key="actionPanel">
 							<string key="name">actionPanel</string>
 							<string key="candidateClassName">NSView</string>
@@ -1703,6 +1748,10 @@
 						<object class="IBToOneOutletInfo" key="actionPlugin">
 							<string key="name">actionPlugin</string>
 							<string key="candidateClassName">RSActionPlugin</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="actionPlugins">
+							<string key="name">actionPlugins</string>
+							<string key="candidateClassName">NSArray</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="borderColor">
 							<string key="name">borderColor</string>
@@ -1716,6 +1765,10 @@
 							<string key="name">currentPlugin</string>
 							<string key="candidateClassName">RSTrixiePlugin</string>
 						</object>
+						<object class="IBToOneOutletInfo" key="filterMenu">
+							<string key="name">filterMenu</string>
+							<string key="candidateClassName">NSPopUpButton</string>
+						</object>
 						<object class="IBToOneOutletInfo" key="filterPanel">
 							<string key="name">filterPanel</string>
 							<string key="candidateClassName">NSView</string>
@@ -1723,6 +1776,10 @@
 						<object class="IBToOneOutletInfo" key="filterPlugin">
 							<string key="name">filterPlugin</string>
 							<string key="candidateClassName">RSFilterPlugin</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="filterPlugins">
+							<string key="name">filterPlugins</string>
+							<string key="candidateClassName">NSArray</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="locatorView">
 							<string key="name">locatorView</string>
@@ -1736,6 +1793,10 @@
 							<string key="name">popoverWindow</string>
 							<string key="candidateClassName">SFBPopoverWindow</string>
 						</object>
+						<object class="IBToOneOutletInfo" key="reactionMenu">
+							<string key="name">reactionMenu</string>
+							<string key="candidateClassName">NSPopUpButton</string>
+						</object>
 						<object class="IBToOneOutletInfo" key="reactionPanel">
 							<string key="name">reactionPanel</string>
 							<string key="candidateClassName">NSView</string>
@@ -1743,6 +1804,10 @@
 						<object class="IBToOneOutletInfo" key="reactionPlugin">
 							<string key="name">reactionPlugin</string>
 							<string key="candidateClassName">RSReactionPlugin</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="reactionPlugins">
+							<string key="name">reactionPlugins</string>
+							<string key="candidateClassName">NSArray</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="window">
 							<string key="name">window</string>

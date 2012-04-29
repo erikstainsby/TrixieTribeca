@@ -25,6 +25,10 @@ NSString * const RSRemoveLocatorNotification = @"RSRemoveLocatorNotification";
 
 NSString * const kRSTrixieIdKeyName = @"data-trixie-id";
 
+NSString * const RSTrixieChangeActiveActionPluginNotification = @"RSTrixieChangeActiveActionPluginNotification";
+NSString * const RSTrixieChangeActiveFilterPluginNotification = @"RSTrixieChangeActiveFilterPluginNotification";
+NSString * const RSTrixieChangeActiveReactionPluginNotification = @"RSTrixieChangeActiveReactionPluginNotification";
+
 int const RSLocatorStyleNone = 0;
 int const RSLocatorStyleActionPending = 1;
 int const RSLocatorStyleReactionPending = 2;

@@ -15,4 +15,8 @@
 @property (assign) IBOutlet NSWindow *window;
 @property (retain) IBOutlet RSTrixieController * windowController;
 
+- (IBAction) setActiveActionPlugin:(id)sender;
+- (IBAction) setActiveFilterPlugin:(id)sender;
+- (IBAction) setActiveReactionPlugin:(id)sender;
+
 @end
